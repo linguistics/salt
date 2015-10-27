@@ -43,6 +43,23 @@ nav.banner {
   width: 40em;
 }
 
+.text-top-container span {
+  vertical-align: text-top;
+}
+.hover-target {
+  &:hover {
+    .hover-hide {
+      display: none;
+    }
+    .hover-show {
+      display: inline-block;
+    }
+  }
+  .hover-show {
+    display: none;
+  }
+}
+
 p, li {
   line-height: 1.4;
 }
