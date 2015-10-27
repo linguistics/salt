@@ -1,0 +1,48 @@
+// [ { "apply": "less" } ]
+
+@burnt-orange: #BF5700;
+@dark-burnt-orange: #A04400;
+
+body {
+  margin: 0;
+  /* Background pattern from subtlepatterns.com */
+  background: url(img/background.png);
+  font-family: Palatino, Garamond, Bookman, serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #222;
+}
+
+nav.banner {
+  padding: 0.7em 0 0.6em;
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+  h1 {
+    font-size: 3.1em;
+    font-weight: 100;
+  }
+  h2 {
+    font-size: 1.3em;
+    line-height: 2.7em;
+  }
+  .ut {
+    color: @burnt-orange;
+    font-variant: small-caps;
+    padding-left: 26px;
+    background: url(img/longhorn.gif) no-repeat left / 28px;
+  }
+}
+.stripe {
+  border-bottom: 3px double @burnt-orange;
+}
+
+.column {
+  margin: 0 auto;
+  width: 40em;
+}
+
+p, li {
+  line-height: 1.4;
+}
