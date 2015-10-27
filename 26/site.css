@@ -1,23 +1,50 @@
 body {
-  font-family: Helvetica, sans-serif;
-  font-size: 95%;
-  line-height: 1.4;
+  margin: 0;
+  /* Background pattern from subtlepatterns.com */
+  background: url(img/background.png);
+  font-family: Palatino, Garamond, Bookman, serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #222;
+}
+nav.banner {
+  padding: 0.7em 0 0.6em;
+}
+nav.banner h1,
+nav.banner h2,
+nav.banner h3,
+nav.banner h4,
+nav.banner h5,
+nav.banner h6 {
   margin: 0;
 }
-
-header {
-  background: #222;
-  color: #DDD;
-}
-header h1, header h2, header h3, header h4 {
+nav.banner h1 {
+  font-size: 3.1em;
   font-weight: 100;
 }
-
-.inline {
-  display: inline-block;
+nav.banner h2 {
+  font-size: 1.3em;
+  line-height: 2.7em;
 }
-
+nav.banner .ut {
+  color: #BF5700;
+  font-variant: small-caps;
+  padding-left: 26px;
+  background: url(img/longhorn.gif) no-repeat left / 28px;
+}
+.stripe {
+  border-bottom: 3px double #BF5700;
+}
 .column {
   margin: 0 auto;
   width: 40em;
+}
+p,
+li {
+  line-height: 1.4;
 }
