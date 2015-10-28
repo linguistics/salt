@@ -12,39 +12,73 @@ h5,
 h6 {
   color: #222;
 }
-nav.banner {
+.banner {
   padding: 0.7em 0 0.6em;
 }
-nav.banner h1,
-nav.banner h2,
-nav.banner h3,
-nav.banner h4,
-nav.banner h5,
-nav.banner h6 {
+.banner h1,
+.banner h2,
+.banner h3,
+.banner h4,
+.banner h5,
+.banner h6 {
   margin: 0;
 }
-nav.banner h1 {
+.banner h1 {
   font-size: 3.1em;
   font-weight: 100;
 }
-nav.banner h2 {
+.banner h2 {
   font-size: 1.3em;
   line-height: 2.7em;
 }
-nav.banner .ut {
+.banner .ut {
   color: #BF5700;
   font-variant: small-caps;
-  padding-left: 26px;
-  background: url(img/longhorn.gif) no-repeat left / 28px;
+  padding-left: 30px;
+  background: url(img/longhorn.gif) no-repeat left / 32px;
 }
-.stripe {
-  border-bottom: 3px double #BF5700;
+nav ul {
+  margin: 0.25em;
+  padding: 0;
+  list-style: none;
 }
-.column {
-  margin: 0 auto;
-  width: 40em;
+.text-top-container span {
+  vertical-align: text-top;
+}
+.hover-target:hover .hover-hide {
+  display: none;
+}
+.hover-target:hover .hover-show {
+  display: inline-block;
+}
+.hover-target .hover-show {
+  display: none;
 }
 p,
 li {
   line-height: 1.4;
+}
+.drs-box {
+  margin: 1em 0.5em;
+  border: 1px solid #222222;
+}
+.drs-box > :first-child {
+  text-align: center;
+  border-bottom: 1px solid #222222;
+}
+.drs-box > div {
+  padding: 0.5em;
+}
+.drs-tuple {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.drs-punctuation-huge {
+  font-size: 400%;
+  height: 1.9ex;
+  font-weight: 100;
+}
+.drs-punctuation-large {
+  font-size: 200%;
 }
