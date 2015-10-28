@@ -2,6 +2,7 @@
 
 @burnt-orange: #BF5700;
 @dark-burnt-orange: #A04400;
+@drs-color: #222222;
 
 body {
   margin: 0;
@@ -14,7 +15,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #222;
 }
 
-nav.banner {
+.banner {
   padding: 0.7em 0 0.6em;
   h1, h2, h3, h4, h5, h6 {
     margin: 0;
@@ -34,13 +35,13 @@ nav.banner {
     background: url(img/longhorn.gif) no-repeat left / 32px;
   }
 }
-.stripe {
-  border-bottom: 3px double @burnt-orange;
-}
 
-.column {
-  margin: 0 auto;
-  width: 40em;
+nav {
+  ul {
+    margin: 0.25em;
+    padding: 0;
+    list-style: none;
+  }
 }
 
 .text-top-container span {
@@ -62,4 +63,30 @@ nav.banner {
 
 p, li {
   line-height: 1.4;
+}
+
+.drs-box {
+  margin: 1em 0.5em;
+  border: 1px solid @drs-color;
+  & > :first-child {
+    text-align: center;
+    border-bottom: 1px solid @drs-color;
+  }
+  & > div {
+    padding: 0.5em;
+  }
+}
+
+.drs-tuple {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.drs-punctuation-huge {
+  font-size: 400%;
+  height: 1.9ex;
+  font-weight: 100;
+}
+.drs-punctuation-large {
+  font-size: 200%;
 }
