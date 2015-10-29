@@ -1,4 +1,4 @@
-<!-- [ { "apply": "wrap", "filepath": "layout.html", "replace": "{}" } ] -->
+<!-- [ { "apply": "wrap", "filepath": "layout.html", "replace": "{}" }, { "apply": "interpolate", "pattern": "\\{timestamp\\}", "js": "new Date().getTime()" } ] -->
 
 <section>
   <h1>Announcements!</h1>
@@ -41,7 +41,7 @@
   </p>
 </section>
 
-<section>
+<section style="display: none">
   <h2><a href="program">Program</a></h2>
 
   <p>
