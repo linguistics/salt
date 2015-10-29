@@ -42,18 +42,6 @@ nav ul {
   padding: 0;
   list-style: none;
 }
-.text-top-container span {
-  vertical-align: text-top;
-}
-.hover-target:hover .hover-hide {
-  display: none;
-}
-.hover-target:hover .hover-show {
-  display: inline-block;
-}
-.hover-target .hover-show {
-  display: none;
-}
 p,
 li {
   line-height: 1.4;
