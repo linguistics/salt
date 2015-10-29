@@ -3,7 +3,7 @@ REVISION := $(shell git rev-parse --short HEAD)
 all: render
 
 render:
-	TIMESTAMP=$(REVISION) fapply walk 26/ ../salt-gh-pages/26/
+	VERSION=$(REVISION) fapply walk 26/ ../salt-gh-pages/26/
 
 publish: ../salt-gh-pages .git/refs/heads/master render
 	# Using commit hash: $(REVISION)
