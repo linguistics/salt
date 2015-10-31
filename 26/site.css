@@ -1,3 +1,6 @@
+html {
+  overflow-y: scroll;
+}
 body {
   margin: 0;
   /* Background pattern from subtlepatterns.com */
@@ -62,20 +65,26 @@ li {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
-.drs-punctuation-huge {
+.drs-tuple .drop {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 300px;
+}
+.punctuation-huge {
   font-size: 400%;
   height: 1.9ex;
-  font-weight: 100;
 }
-.drs-punctuation-large {
+.punctuation-large {
   font-size: 200%;
 }
