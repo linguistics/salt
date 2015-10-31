@@ -7,3 +7,13 @@ else {
   var current_variable_container_el = document.getElementById('current_variable_container');
   current_variable_container_el.style.display = 'none';
 }
+
+var admin_escapes = 0;
+document.addEventListener('keyup', function(ev) {
+  if (ev.which == 27) {
+    admin_escapes++;
+  }
+  if (admin_escapes > 1) {
+    document.getElementById('admin').style.display = 'block';
+  }
+});
