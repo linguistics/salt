@@ -4,6 +4,9 @@
 @dark-burnt-orange: #A04400;
 @drs-color: #222222;
 
+html {
+  overflow-y: scroll;
+}
 body {
   margin: 0;
   /* Background pattern from subtlepatterns.com */
@@ -62,14 +65,18 @@ p, li {
 
 .drs-tuple {
   display: flex;
-  align-items: center;
   justify-content: center;
+
+  .drop {
+    display: flex;
+    align-items: center;
+    height: 300px;
+  }
 }
-.drs-punctuation-huge {
+.punctuation-huge {
   font-size: 400%;
   height: 1.9ex;
-  font-weight: 100;
 }
-.drs-punctuation-large {
+.punctuation-large {
   font-size: 200%;
 }
