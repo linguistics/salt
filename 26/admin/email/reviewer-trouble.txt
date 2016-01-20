@@ -1,0 +1,15 @@
+Subject: SALT 26 - Reviewing (are you OK?)
+
+Dear {Firstname:s},
+
+<p>I noticed that you haven't logged into EasyChair yet.
+Since reviews are due in just 3 days (Friday, January 22), please can you let me know
+as soon as possible if there's a problem, and if there's anything I can do to get you up and running?</p>
+
+<p>If you're having difficulty logging on to the EasyChair system, we can send you
+the abstract PDFs and an online (non-EasyChair) form to fill out with your reviews.
+</p>
+
+<p>Sincerely,
+<br>
+*Signature*, on behalf of the SALT 26 Organizing Committee

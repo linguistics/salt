@@ -1,0 +1,34 @@
+Subject: SALT reviewing reminder (due January 22!)
+
+Dear [*FIRST-NAME*],
+
+First off, thank you for agreeing to review abstracts for the upcoming SALT conference! This email is going out to all reviewers, so if you have already submitted your reviews, double-thanks! But for most of you, this email is a friendly reminder that reviews are due one week from now, on Friday, January 22.
+
+The subsequent author response period will end on January 29, and your responses to those responses will be due by Friday, February 5. The SALT committee will then finalize and deliver all decisions by the end of February.
+
+The purpose of the author and reviewer response periods is to enable constructive dialogue between authors and reviewers. Both author responses and further reviewer responses are optional. The program committee may refer to the dialogue to clarify their decisions, but in making program selections will give primary weight to the abstracts and the reviews.
+
+https://easychair.org/conferences/?conf=salt26
+
+Happy New Year!
+
+*Signature*
+On behalf of the SALT organizing committee
+
+--- The main section of the original assignment notification is copied below: ---
+
+We have tweaked the standard EasyChair review form to facilitate discussion in the post-review response period, and to help the the program committee use your expertise effectively in making final decisions; please read the descriptions of all fields before filling them out.
+
+Reviews are due one month from now: 11:59pm CST on Friday January 22, 2016. Authors will then have a one week feedback period ending January 29, and you will have one further week (hence January 29 -- February 5) to reply.
+
+EasyChair troubleshooting:
+
+We've received several reports of users logging into EasyChair and only having the "author" role (as a reviewer, you should have the "PC" role). This happens when you login with an email address different from the one associated with your SALT 26 reviewer access. To resolve this:
+
+1. Login to EasyChair with your usual account and find the "My account" link in the dropdown menu under "EasyChair"
+2. In the "Email Addresses" section, add a "New alternative address" with the *exact* email address that this email was sent to.
+3. EasyChair will send an email to that address to confirm that you have access to that account.
+4. Open that email and click the URL to confirm, which should take you back to the EasyChair site.
+5. In rarer cases, you may have two distinct EasyChair accounts, and it won't allow you add an "alternative address." In that case, you can either log out and back in with the other account, or merge the two accounts.
+
+Please email salt26conf@gmail.com with any further problems, queries, or suggestions.
