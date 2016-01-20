@@ -1,6 +1,6 @@
 var current_variable_global = window.current_variable;
 if (current_variable_global) {
-  var current_variable_el = document.getElementById('current_variable');
+  var current_variable_el = document.getElementById('current_variable_placeholder');
   current_variable_el.textContent = current_variable_global;
 }
 else {
