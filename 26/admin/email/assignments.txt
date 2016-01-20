@@ -1,0 +1,31 @@
+Subject: SALT 26 paper assignment
+
+Dear [*FIRST-NAME*],
+
+Please find below the list of papers assigned to you for reviewing.
+
+We have tweaked the standard EasyChair review form to facilitate discussion in the post-review response period, and to help the the program committee use your expertise effectively in making final decisions; please read the descriptions of all fields before filling them out.
+
+Reviews are due one month from now: 11:59pm CST on Friday January 22, 2016. Authors will then have a one week feedback period ending January 29, and you will have one further week (hence January 29 -- February 5) to reply.
+
+EasyChair troubleshooting:
+
+We've received several reports of users logging into EasyChair and only having the "author" role (as a reviewer, you should have the "PC" role). This happens when you login with an email address different from the one associated with your SALT 26 reviewer access. To resolve this:
+
+1. Login to EasyChair with your usual account and find the "My account" link in the dropdown menu under "EasyChair"
+2. In the "Email Addresses" section, add a "New alternative address" with the *exact* email address that this email was sent to.
+3. EasyChair will send an email to that address to confirm that you have access to that account.
+4. Open that email and click the URL to confirm, which should take you back to the EasyChair site.
+5. In rarer cases, you may have two distinct EasyChair accounts, and it won't allow you add an "alternative address." In that case, you can either log out and back in with the other account, or merge the two accounts.
+
+Please email salt26conf@gmail.com with any further problems, queries, or suggestions.
+
+I'm very grateful to you for giving some of our 182 authors feedback on their work, and for helping us maintain SALT’s extraordinarily high standards.
+
+Wishing you all the best for the festive season,
+
+*Signature*
+On behalf of the SALT organizing committee
+
+---------------------------------------------
+[*ASSIGNMENT*]

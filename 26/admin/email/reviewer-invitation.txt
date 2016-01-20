@@ -1,0 +1,37 @@
+Subject: SALT 26 - Invitation to review
+
+Dear {first_name:s},
+
+<p>I'm writing to request your help with reviewing abstracts for Semantics and
+Linguistic Theory 26, to be held at the University of Texas at Austin, May 12-15, 2016
+(http://salt.ling.utexas.edu/26/). Abstracts are due on December 20, 2015.
+We will send out reviewing assignments by December 23, 2015, via EasyChair,
+and reviews will be due on January 22, 2016.
+
+<p><b>If you're able to take this on, please confirm with an email reply; a quick "yes" suffices!</b>
+You can also use this address (<a href="mailto:salt26conf@gmail.com">salt26conf@gmail.com</a>)
+for any other queries you might have.
+
+<p>After we receive a confirmation, you will receive a further email from EasyChair with a link
+to our conference's <a href="https://easychair.org/conferences/?conf=salt26">review site</a>.
+Once you've logged in to EasyChair, click "My topics" under the "SALT 26" tab, and there you will be able
+to select topics of interest for abstracts you will be assigned to review.
+There is a section of topics dedicated to our special session on presupposition.
+Please select any topics you would be happy to review for in the special session,
+as well as any topics you would like to review for in the main session.
+(There is overlap between special and main session topics;
+please select in both places if you're willing to review for both sessions.)
+Regardless of how many topics you select, you will be assigned no more than six abstracts,
+each at most three pages of main text.
+
+<p>Reviewers are strongly encouraged to <a href="http://salt.ling.utexas.edu/26/call">submit
+their own abstracts</a> as well.
+
+<p>Thank you for helping make SALT 26 a success, and I look forward to welcoming you to UT Austin in May!
+
+<p>Sincerely,
+<br>
+*Signature*, on behalf of the SALT 26 Organizing Committee
+
+<p>P.S. If you would prefer not to receive further SALT-related announcements at this address,
+please reply to this email with the subject <b>UNSUBSCRIBE</b>.
