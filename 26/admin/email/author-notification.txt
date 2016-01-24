@@ -1,0 +1,18 @@
+Subject: SALT 26 review feedback available for submission [*NUMBER*]; author response period begins
+
+Dear [*FIRST-NAME*],
+
+Thank you for your submission to SALT 26 ([*TITLE*]). Your reviewers' feedback is attached to this email. Your response to reviewer feedback is due by 11:59 pm CST, Friday, January 29, 2016. Reviewers will then have the opportunity to react to your response by February 5, and the committee will finalize decisions by the end of February.
+
+To submit your response, log on the EasyChair website and select your submission from the menu.
+
+https://easychair.org/conferences/?conf=salt26
+
+Your response should be as concise and to the point as possible, and focus on resolving any factual errors in the reviews and answering any questions posed by the reviewers. It should not provide new research results or reformulate the presentation. The purpose of the author and reviewer response periods is to enable constructive dialogue between authors and reviewers. Both author responses and further reviewer responses are optional. The program committee may refer to the dialogue to clarify their decisions, but in making program selections will give primary weight to the abstracts and the reviews.
+
+[*REVIEWS*]
+
+Please let us know if you have any questions,
+
+*Signature*,
+On behalf of the SALT 26 Organizing Committee
