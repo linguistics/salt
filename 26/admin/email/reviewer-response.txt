@@ -1,0 +1,23 @@
+Subject: SALT 26 author response ends; reviewer response begins
+
+Dear [*FIRST-NAME*],
+
+As we indicated previously, this year (like last year) SALT is allowing authors to respond to their reviews, and reviewers both to respond to those comments, and to adjust their numerical assessments if their view has changed. The author response period ended last night, and we received responses from the authors of 165 submissions, out of 182 total. We are now starting the reviewer response period, which will last until 11:59 pm CST, Saturday, February 6.
+
+While reviewer responses are completely optional, we would certainly welcome either revisions to your score or further confidential comments to the program committee, and we are also sure that authors would be happy to receive acknowledgement of their responses, and further comments if you have them.
+
+To view the author responses, log on to EasyChair, click on Reviews, and then click on the magnifying glass for each submission in the “show reviews” column. The author response, if there is one, will be at the bottom of that page under a “Response Letter” heading.
+
+To save you time, we recommend that you do not add a new review, but rather simply update your original review by adding brief additional comments at the bottom, and changing your scores as you see fit.
+
+https://easychair.org/conferences/?conf=salt26
+
+Here are some clarifications:
+i) Authors saw only the comments to authors, and did not see your scores or your confidential comments to the selection committee.
+ii) Author responses were limited to 500 words, and there were 4-6 reviews per abstract, so you should not expect authors to address every point that was made by reviewers.
+iii) It was unclear for some reviewers what the meaning of the “poster” flag on EasyChair was. If a paper is flagged with “poster”, this indicates that the paper should BOTH be considered for oral presentation and considered for poster presentation.
+iv) If your scoring is going to change substantially, we would welcome that input as soon as possible.
+
+Many thanks for your continued help with SALT!
+
+*Signature*, on behalf of the organizing committee
