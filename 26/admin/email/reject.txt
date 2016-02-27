@@ -1,0 +1,14 @@
+Subject: SALT 26 notification for paper [*NUMBER*]
+
+Dear [*FIRST-NAME*],
+
+We’re sorry to inform you that your abstract ‘[*TITLE*]’ was not selected for presentation at SALT 26. Once again, it was an extremely competitive year for SALT, and time and space constraints meant that we were forced to reject many strong submissions.
+
+We thank you very much for your submission, and we hope you can join us at UT for the conference, May 12-15. Please see our conference website http://salt.ling.utexas.edu/26/ for further details.
+
+The reviews we received for your abstract are included below and are also available from the EasyChair reviewing site.
+
+Sincerely,
+
+*Signature*
+On behalf of the SALT organizing committee

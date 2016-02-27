@@ -88,3 +88,22 @@ li {
 .punctuation-large {
   font-size: 200%;
 }
+.team1 {
+  background-color: #e7d4dd;
+}
+.team2 {
+  background-color: #d1e2f2;
+}
+.team3 {
+  background-color: #dce7d3;
+}
+.team4 {
+  background-color: #fef0ce;
+}
+.team5 {
+  background-color: #e1bbb1;
+}
+.selection-committee span {
+  border-radius: 3px;
+  padding: 1px 4px 0px;
+}
