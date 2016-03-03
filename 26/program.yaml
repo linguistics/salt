@@ -259,8 +259,9 @@ days:
       title: Poster session & refreshments
     - start: '5:30'
       end: '6:30'
-      author: Kristen Syrett
-      title: TBD
+      submissions:
+        - author: Kristen Syrett
+          title: TBD
     - start: '6:30'
       end: '10:30'
       title: Party
@@ -272,7 +273,7 @@ days:
       title: Coffee and breakfast
     - start: '9:00'
       end: '10:00'
-      submission:
+      submissions:
         - author: Rick Nouwen
           title: TBD
     - start: '10:00'
@@ -299,7 +300,7 @@ days:
       title: Poster session
     - start: '5:30'
       end: '6:30'
-      submission:
+      submissions:
         - author: Edit Doron
           title: TBD
     - start: '6:30'
