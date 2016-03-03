@@ -1,0 +1,332 @@
+---
+submissions:
+  - &2
+    author: "Nadine Theiler, Floris Roelofsen and Maria Aloni"
+    title: Towards a uniform account of responsive verbs
+  - &7
+    author: Sunwoo Jeong and Christopher Potts
+    title: "Intonational sentence-type conventions for perlocutionary effects: An experimental investigation"
+  - &14
+    author: David Yoshikazu Oshima
+    title: The meanings of perspectival verbs and their implications on the taxonomy of conventional implicature
+  - &28
+    author: Anamaria Falaus and Andreea Nicolae
+    title: "N-words vs NPIs: reconstruction and covert negation"
+  - &29
+    author: "Ashwini Deo, Sara Sanchez-Alonso and Maria Pinango"
+    title: "ser and estar as presuppositional variants: formal analysis and experimental evidence"
+  - &34
+    author: Anja Goldschmidt and Joost Zwarts
+    title: "Hitting the nail on the head: Force vectors in verb semantics"
+  - &37
+    author: Peter Hallman
+    title: '"All" and "every" as quantity superlative'
+  - &41
+    author: Henk Zeevat
+    title: Blocking Presupposition by Causal and Identity Inferences
+  - &42
+    author: Manfred Krifka and Fereshteh Modarresi
+    title: Number-Neutrality and Anaphoric Uptake  of Pseudo-Incorporated Nominals in Persian (and Weak Definites in English)
+  - &43
+    author: "Lucas Champollion, Ivano Ciardelli and Linmin Zhang"
+    title: "Breaking de Morgan's law in counterfactual antecedents"
+  - &45
+    author: Mingming Liu
+    title: Mandarin wh-conditionals as interrogative conditionals
+  - &46
+    author: Robert Henderson
+    title: Pluractional Demonstrations
+  - &48
+    author: Pauline Jacobson
+    title: "Variable Names Don't Matter (and aren't needed)"
+  - &51
+    author: Ciyang Qing
+    title: "Up to n: pragmatic inference about an optimal lower bound"
+  - &55
+    author: Ivano Ciardelli
+    title: Lifting conditionals to inquisitive propositions
+  - &57
+    author: Matthew Mandelkern
+    title: Dissatisfaction Theory
+  - &59
+    author: Jeremy Kuhn
+    title: "Dependent indefinites: the view from sign language"
+  - &60
+    author: David Lahm
+    title: "Sentence Internal \"Different\" as a Restriction on Skolem Functions"
+  - &61
+    author: Takashi Morita
+    title: Scalar implicatures in non-monotonic environments
+  - &62
+    author: Clemens Mayr and Jacopo Romoli
+    title: "Satisfied or exhaustified: an ambiguity account of the proviso problem"
+  - &63
+    author: Serge Minor
+    title: Weak vs Strong Distributivity and a Two-Component Theory of Number
+  - &65
+    author: Julie Hunter and Nicholas Asher
+    title: Shapes of Conversation and At-Issue Content
+  - &67
+    author: Jefferson Barlew
+    title: Coming to an understanding of some projective contents
+  - &69
+    author: Manfred Krifka
+    title: "A Presuppositional Analysis of Realis and Potentialis Modality in Daakie (Port Vato), Ambrym, Vanuatu"
+  - &70
+    author: Alda Mari
+    title: Epistemic attitudes and the Italian subjunctive
+  - &73
+    author: Christopher Davis and Eric McCready
+    title: Expressives and Alternatives
+  - &76
+    author: Lucas Champollion
+    title: Homogeneity in donkey sentences
+  - &80
+    author: "Stavroula Alexandropoulou, Jakub Dotlačil and Rick Nouwen"
+    title: "At least ignorance inferences come at a processing cost: Support from eye movements"
+  - &82
+    author: Jacques Jayez and Robert Reinecke
+    title: Factives and Salience - An experimental Approach
+  - &92
+    author: Sven Lauer
+    title: "On the status of 'Maximize Presupposition'"
+  - &94
+    author: Jon Ander Mendia
+    title: Reasoning with Partial Orders
+  - &96
+    author: Peter Sutton and Hana Filip
+    title: Counting in Context
+  - &100
+    author: "Jérémy Zehr, Cory Bill, Lyn Tieu, Jacopo Romoli and Florian Schwarz"
+    title: "Presupposition projection from the scope of 'none': universal, existential, or both?"
+  - &103
+    author: Agata Maria Renans
+    title: "A cross-categorial definite determiner: evidence from Ga (Kwa)"
+  - &104
+    author: Elizabeth Coppock
+    title: Superlative modifiers as modified superlatives
+  - &106
+    author: Elitzur Bar-Asher Siegal and Nora Boneh
+    title: "Discourse update at the service of mirativity effects: the case of the Discursive Dative"
+  - &107
+    author: Sarah Zobel
+    title: Adjectival as-phrases as intensional secondary predicates
+  - &109
+    author: Justin Bledin and Kyle Rawlins
+    title: Epistemic resistance moves
+  - &110
+    author: Maayan Abenina-Adar and Nikos Angelopoulos
+    title: On root modality and thematic relations in Tagalog and English
+  - &112
+    author: Suzi Lima
+    title: "On object denoting nouns: defining atoms"
+  - &122
+    author: Sam Alxatib
+    title: "Actuality Entailments, Negation, and Free Choice Inferences"
+  - &124
+    author: Luis Alonso-Ovalle
+    title: "Are All Concessive Scalar Particles the Same? Probing into Spanish \"Siquiera.\""
+  - &126
+    author: Yael Sharvit and Jungmin Kang
+    title: Fragment Functional Answers
+  - &129
+    author: Michael Yoshitaka Erlewine
+    title: Focus association into copies and the scope of even
+  - &133
+    author: Alexis Wellwood
+    title: States and events for S-level gradable adjectives
+  - &135
+    author: Masoud Jasbi
+    title: Three types of indefinites in Persian
+  - &137
+    author: James Collins
+    title: Reasoning about definiteness without articles
+  - &138
+    author: Michael Yoshitaka Erlewine and Hadas Kotek
+    title: Untangling Tanglewood using covert focus movement
+  - &139
+    author: Dylan Bumford
+    title: Decomposing definiteness
+  - &141
+    author: Aaron Steven White and Kyle Rawlins
+    title: A computational model of S-selection
+  - &145
+    author: Julian Grove and Emily Hanink
+    title: Article selection and anaphora in the German relative clause
+  - &149
+    author: Despina Oikonomou
+    title: Imperatives are existential modals; Deriving the must-reading as an Implicature
+  - &155
+    author: William Starr
+    title: Expressing Permission
+  - &156
+    author: Malte Willer and Chris Kennedy
+    title: Subjective Attitudes and Counterstance Contingency
+  - &157
+    author: John Gluckman and Margit Bowler
+    title: "Expletive agreement, evidentiality, and modality in Logooli"
+  - &158
+    author: Andrew Kehler and Jonathan Cohen
+    title: On the Presuppositional Behavior of Coherence-Driven Pragmatic Enrichments
+  - &161
+    author: "Timothy Leffel, Ming Xiang and Chris Kennedy"
+    title: "Imprecision is pragmatic: Evidence from referential processing"
+  - &164
+    author: Prerna Nadathur
+    title: Causal necessity and sufficiency in implicativity
+  - &166
+    author: Itamar Francez
+    title: Summative existentials
+  - &169
+    author: Robert Pasternak
+    title: A conservative theory of gradable modality
+  - &181
+    author: Rebekah Baglini
+    title: The semantics of quotative ideophones
+
+days:
+- title: "Thursday, May 12"
+  events:
+    - start: '8:45'
+      end: '9:10'
+      title: Registration
+    - start: '9:10'
+      end: '9:25'
+      title: Opening remarks
+    - start: '9:25'
+      end: '10:15'
+      submissions:
+        - author: Lauri Karttunen
+          title: 'Presupposition: What went wrong?'
+    - start: '10:15'
+      end: '10:55'
+      submissions: [*57]
+    - start: '11:10'
+      end: '11:50'
+      submissions: [*137]
+    - start: '11:50'
+      end: '12:30'
+      submissions: [*92]
+    - start: '12:30'
+      end: '2:00'
+      title: Lunch
+    - start: '2:00'
+      end: '2:40'
+      submissions: [*69]
+    - start: '2:00'
+      end: '2:40'
+      submissions:
+        - author: Judith Tonhauser
+          title: TBD
+    - start: '3:45'
+      end: '4:25'
+      submissions: [*100]
+    - start: '4:25'
+      end: '5:15'
+      submissions:
+        - author: Stanley Peters
+          title: TBD
+
+- title: "Friday, May 13"
+  events:
+    - start: '8:00'
+      end: '9:00'
+      title: Registration and breakfast
+    - start: '9:00'
+      end: '9:10'
+      title: Welcome
+    - start: '9:10'
+      end: '11:15'
+      title: Session 1
+      submissions: [*2, *45, *55]
+    - start: '11:40'
+      end: '12:30'
+      title: Poster session lightning talks
+      submissions: [*14, *29, *41, *62, *67, *82, *158, *70, *145, *73]
+    - start: '12:30'
+      end: '2:00'
+      title: Lunch on your own
+    - start: '2:00'
+      end: '3:20'
+      title: Session 2
+      submissions: [*181, *46]
+    - start: '3:40'
+      end: '4:30'
+      title: Poster session lightning talks
+      submissions: [*48, *61, *96, *107, *122, *124, *126, *138, *149, *156, *164]
+    - start: '4:30'
+      end: '5:30'
+      title: Poster session & refreshments
+    - start: '5:30'
+      end: '6:30'
+      author: Kristen Syrett
+      title: TBD
+    - start: '6:30'
+      end: '10:30'
+      title: Party
+
+- title: "Saturday, May 14"
+  events:
+    - start: '8:30'
+      end: '9:00'
+      title: Coffee and breakfast
+    - start: '9:00'
+      end: '10:00'
+      submission:
+        - author: Rick Nouwen
+          title: TBD
+    - start: '10:00'
+      end: '10:40'
+      title: Session 1
+      submissions: [*155]
+    - start: '11:00'
+      end: '11:50'
+      title: Poster session lightning talks
+      submissions: [*34, *43, *51, *80, *94, *104, *110, *112, *133, *169]
+    - start: '11:50'
+      end: '1:20'
+      title: Lunch
+    - start: '1:20'
+      end: '3:20'
+      title: Session 2
+      submissions: [*141, *7, *161]
+    - start: '3:40'
+      end: '4:30'
+      title: Poster session lightning talks
+      submissions: [*37, *42, *60, *63, *65, *103, *106, *109, *129, *135, *139]
+    - start: '4:30'
+      end: '5:30'
+      title: Poster session
+    - start: '5:30'
+      end: '6:30'
+      submission:
+        - author: Edit Doron
+          title: TBD
+    - start: '6:30'
+      end: '7:00'
+      title: Business meeting
+
+- title: "Sunday, May 15"
+  events:
+    - start: '9:00'
+      end: '9:30'
+      title: Coffee and breakfast
+    - start: '9:30'
+      end: '10:50'
+      title: Session 1
+      submissions: [*76, *166]
+    - start: '11:10'
+      end: '12:30'
+      title: Session 2
+      submissions: [*59, *157]
+    - start: '12:30'
+      end: '1:30'
+      title: Lunch (provided)
+    - start: '1:30'
+      end: '2:10'
+      title: Session 3
+      submissions: [*28]
+    - start: '2:10'
+      end: '3:10'
+      author: Sigrid Beck
+      title: TBD
