@@ -107,3 +107,32 @@ li {
   border-radius: 3px;
   padding: 1px 4px 0px;
 }
+ul.submissions {
+  margin: .25em 0;
+}
+.event header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-size: 110%;
+  font-weight: bold;
+}
+.event header .spacer {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 0 .5ex;
+}
+.event header hr {
+  border-top: 1px dotted #999;
+}
