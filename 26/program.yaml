@@ -8,7 +8,7 @@ submissions:
     title: "Intonational sentence-type conventions for perlocutionary effects: An experimental investigation"
   - &14
     author: David Yoshikazu Oshima
-    title: The meanings of perspectival verbs and their implications on the taxonomy of conventional implicature
+    title: The meanings of perspectival verbs and their implications on the taxonomy of projective content/conventional implicature
   - &28
     author: Anamaria Falaus and Andreea Nicolae
     title: "N-words vs NPIs: reconstruction and covert negation"
@@ -329,5 +329,6 @@ days:
       submissions: [*28]
     - start: '2:10'
       end: '3:10'
-      author: Sigrid Beck
-      title: TBD
+      submissions:
+        - author: Sigrid Beck
+          title: TBD
