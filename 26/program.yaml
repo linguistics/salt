@@ -299,12 +299,7 @@ days:
       end: '5:30'
       title: Poster session
     - start: '5:30'
-      end: '6:30'
-      submissions:
-        - author: Edit Doron
-          title: TBD
-    - start: '6:30'
-      end: '7:00'
+      end: '6:00'
       title: Business meeting
 
 - title: "Sunday, May 15"
