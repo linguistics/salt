@@ -2,9 +2,10 @@ var React = require('react');
 
 class Submission extends React.Component {
   render() {
-    const {author, title} = this.props;
+    const {author, title, unconfirmed} = this.props;
     return (
       <div>
+        {unconfirmed && <small>(not yet confirmed)</small>}
         <span>{author}: </span>
         <i>{title}</i>
       </div>

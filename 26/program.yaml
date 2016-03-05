@@ -66,9 +66,11 @@ submissions:
   - &65
     author: Julie Hunter and Nicholas Asher
     title: Shapes of Conversation and At-Issue Content
+    unconfirmed: true
   - &67
     author: Jefferson Barlew
     title: Coming to an understanding of some projective contents
+    unconfirmed: true
   - &69
     author: Manfred Krifka
     title: "A Presuppositional Analysis of Realis and Potentialis Modality in Daakie (Port Vato), Ambrym, Vanuatu"
@@ -87,6 +89,7 @@ submissions:
   - &82
     author: Jacques Jayez and Robert Reinecke
     title: Factives and Salience - An experimental Approach
+    unconfirmed: true
   - &92
     author: Sven Lauer
     title: "On the status of 'Maximize Presupposition'"
@@ -126,6 +129,7 @@ submissions:
   - &124
     author: Luis Alonso-Ovalle
     title: "Are All Concessive Scalar Particles the Same? Probing into Spanish \"Siquiera.\""
+    unconfirmed: true
   - &126
     author: Yael Sharvit and Jungmin Kang
     title: Fragment Functional Answers
@@ -141,6 +145,7 @@ submissions:
   - &137
     author: James Collins
     title: Reasoning about definiteness without articles
+    unconfirmed: true
   - &138
     author: Michael Yoshitaka Erlewine and Hadas Kotek
     title: Untangling Tanglewood using covert focus movement
@@ -174,6 +179,7 @@ submissions:
   - &164
     author: Prerna Nadathur
     title: Causal necessity and sufficiency in implicativity
+    unconfirmed: true
   - &166
     author: Itamar Francez
     title: Summative existentials
