@@ -70,7 +70,6 @@ submissions:
   - &67
     author: Jefferson Barlew
     title: Coming to an understanding of some projective contents
-    unconfirmed: true
   - &69
     author: Manfred Krifka
     title: "A Presuppositional Analysis of Realis and Potentialis Modality in Daakie (Port Vato), Ambrym, Vanuatu"
@@ -217,8 +216,8 @@ days:
     - start: '2:00'
       end: '2:40'
       submissions: [*69]
-    - start: '2:00'
-      end: '2:40'
+    - start: '2:40'
+      end: '3:30'
       submissions:
         - author: Judith Tonhauser
           title: TBD
