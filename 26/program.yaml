@@ -217,8 +217,8 @@ days:
     - start: '2:00'
       end: '2:40'
       submissions: [*69]
-    - start: '2:00'
-      end: '2:40'
+    - start: '2:40'
+      end: '3:30'
       submissions:
         - author: Judith Tonhauser
           title: TBD
