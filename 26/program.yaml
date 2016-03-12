@@ -66,7 +66,6 @@ submissions:
   - &65
     author: Julie Hunter and Nicholas Asher
     title: Shapes of Conversation and At-Issue Content
-    unconfirmed: true
   - &67
     author: Jefferson Barlew
     title: Coming to an understanding of some projective contents
@@ -176,7 +175,6 @@ submissions:
   - &164
     author: Prerna Nadathur
     title: Causal necessity and sufficiency in implicativity
-    unconfirmed: true
   - &166
     author: Itamar Francez
     title: Summative existentials
