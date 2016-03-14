@@ -99,3 +99,4 @@ Templates for the various emails we delivered to authors and reviewers are avail
 - **2016-01-27** [author-notification-2.txt](email/author-notification-2.txt): The "SALT 26 author response period reminder; additional reviews in some cases" EasyChair notification was sent out to all authors.
 - **2016-01-30** [reviewer-response.txt](email/reviewer-response.txt): The "SALT 26 author response ends; reviewer response begins" EasyChair notification was sent out to 276 reviewers (those that had previously submitted reviews).
 - **2016-03-11** [program-announcement.txt](email/program-announcement.txt): The "SALT 26 Program Announcement" email was sent out to 632 addresses on the semantics mailing list (which now includes all of the EasyChair authors, "corresponding" or not).
+- **2016-03-14** [accepted-abstract-request.txt](email/accepted-abstract-request.txt): The "SALT 26 Publicity" email was sent out to the 88 corresponding authors of 61 papers.
