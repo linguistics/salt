@@ -1,13 +1,15 @@
+var fs = require('fs');
 var React = require('react');
 
 class Submission extends React.Component {
   render() {
-    const {author, title, unconfirmed} = this.props;
+    const {id, author, title} = this.props;
+    const abstract_filename = `abstracts/${id}.pdf`;
+    const abstract_exists = fs.existsSync(abstract_filename);
     return (
       <div>
-        {unconfirmed && <small>(not yet confirmed)</small>}
         <span>{author}: </span>
-        <i>{title}</i>
+        {abstract_exists ? <a href={abstract_filename}><i>{title}</i></a> : <i>{title}</i>}
       </div>
     );
   }
