@@ -1,0 +1,16 @@
+Subject: SALT 26 Publicity
+
+Dear [*FIRST-NAME*],
+
+I'd like to add your abstract to our website, linked from your entry on the program (http://salt.ling.utexas.edu/26/program), but I first want to give you a chance to touch it up and add a little information:
+
+Most importantly, please prepend a single additional header page with the names of all authors, institutions, and a 100-250 word summary (an abstract of the abstract). If your paper had any self-identifying references masked / omitted to facilitate the anonymous review process, please de-anonymize those. Finally, feel free to make corrections or incorporate your reviewers' feedback, as long as the resulting document is not longer than five pages.
+
+Please email the updated PDF, as a plain attachment with the filename "[*NUMBER*].pdf", to salt26conf@gmail.com with the subject line "Submission [*NUMBER*] abstract".
+
+Alternatively, if you don't have any time to update your abstract, but still want it to be available on the website, simply send an email to salt26conf@gmail.com with the subject line "Submission [*NUMBER*] abstract release".
+
+Thanks!
+
+*Signature*
+On behalf of the SALT organizing committee
