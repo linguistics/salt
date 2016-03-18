@@ -9,6 +9,7 @@ program.html: program.js program.yaml
 
 abstracts-all:
 	ls CVS/abstracts/*.pdf | sed 's:CVS/::' | xargs $(MAKE)
+	touch program.yaml
 
 abstracts/%.pdf: CVS/abstracts/%.pdf
 	gs -q -sDEVICE=pdfwrite -o $@ $<
