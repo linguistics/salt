@@ -1,6 +1,6 @@
 SHELL = bash
 
-all: program.html
+all: program.html abstracts-all
 
 program.html: program.js program.yaml
 	echo '<!-- [ { "apply": "wrap", "filepath": "layout.html", "replace": "{}" }, { "apply": "interpolate", "pattern": "\\{version\\}", "js": "process.env.VERSION" } ] -->' >$@
