@@ -1,0 +1,27 @@
+In this talk I will discuss the use of expressive adverbs as adverbs
+of degree. For instance, when combined with adjectives, expressives
+like English "bloody", as in "bloody expensive", have an intensifying
+effect on top of their expressive effect. This observation suggests
+that expressive intensifiers are so-called mixed content expressions
+(McCready, 2010, S&P 3.8): their lexical semantics specifies at the
+same time an expressive affective content and a descriptive
+intensifying one.
+
+Starting point for this talk is the observation that expressive
+emotive content appears to systematically co-occur with a
+(degree-)intensifying function in the descriptive realm. This raises
+the question why we would consistently see these two types of content
+in two segregated dimensions. I will show that the degree modification
+function of these adverbs can be seen to follow from their expressive
+content. This raises a dilemma: if we want to account for the
+systematic double role of expressives as descriptive intensifiers,
+then we should not only allow mixed content but also what may be
+called expressive intrusion into the compositional descriptive
+semantics of the sentence containing the adverb.
+
+The upshot is that expressive intensifiers force us to look critically
+at the relation between expressive and descriptive contributions to
+the overall sentence meaning. In the talk I will go through several
+theoretical options in order to ascertain whether the
+expressive/descriptive dichotomy is tenable for this class of
+expressions.
