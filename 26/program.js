@@ -1,10 +1,11 @@
 var fs = require('fs');
+var path = require('path');
 var React = require('react');
 
 class Submission extends React.Component {
   render() {
-    const {id, author, title} = this.props;
-    const abstract_filename = `abstracts/${id}.pdf`;
+    const {id, author, title, abstract} = this.props;
+    const abstract_filename = path.join('abstracts', abstract || `${id}.pdf`);
     const abstract_exists = fs.existsSync(abstract_filename);
     return (
       <div>
