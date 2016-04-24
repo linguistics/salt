@@ -259,6 +259,7 @@ days:
       submissions:
         - author: Lauri Karttunen
           title: 'Presupposition: What went wrong?'
+          abstract: karttunen.html
     - start: '10:15'
       end: '10:55'
       submissions: [*57]
