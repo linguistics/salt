@@ -323,7 +323,8 @@ days:
       end: '6:30'
       submissions:
         - author: Kristen Syrett
-          title: TBD
+          title: 'Word by word: Experimental investigations in the acquisition of the lexicon'
+          abstract: syrett.pdf
     - start: '6:30'
       end: '10:30'
       title: Party
