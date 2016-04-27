@@ -337,9 +337,9 @@ days:
     - start: '9:00'
       end: '10:00'
       submissions:
-        - author: Rick Nouwen
-          title: 'Expressive intensification: expressive intrusion?'
-          abstract: nouwen.txt
+        - author: Kristen Syrett
+          title: 'Word by word: Experimental investigations in the acquisition of the lexicon'
+          abstract: syrett.pdf
     - start: '10:00'
       end: '10:40'
       title: Session 1
@@ -389,6 +389,6 @@ days:
     - start: '2:10'
       end: '3:10'
       submissions:
-        - author: Kristen Syrett
-          title: 'Word by word: Experimental investigations in the acquisition of the lexicon'
-          abstract: syrett.pdf
+        - author: Rick Nouwen
+          title: 'Expressive intensification: expressive intrusion?'
+          abstract: nouwen.txt
