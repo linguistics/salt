@@ -60,7 +60,7 @@ const routes = [
   {
     url: 'program.html',
     handler() {
-      return renderReact(components.Program);
+      return renderReact(components.Program, {current_variable: 'p'});
     },
   },
   {
