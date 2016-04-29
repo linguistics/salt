@@ -1,10 +1,12 @@
+SHELL := bash
 REVISION := $(shell git rev-parse --short HEAD)
 
 all: render
 
 render:
-	$(MAKE) -C 26
-	VERSION=$(REVISION) fapply walk 26/ ../salt-gh-pages/26/
+	cp -R 26/abstracts/ ../salt-gh-pages/26/abstracts/
+	cp -R 26/img/ ../salt-gh-pages/26/img/
+	VERSION=$(REVISION) node 26/render.js --out ../salt-gh-pages/26/
 
 publish: ../salt-gh-pages .git/refs/heads/master render
 	@echo Using commit hash: $(REVISION)

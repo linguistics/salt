@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "autoprefixer": "*",
+    "babel-core": "^5.0.0",
+    "js-yaml": "3.5.5",
+    "less": "*",
+    "optimist": "0.6.1",
+    "postcss": "*",
+    "react": "*",
+    "react-dom": "*"
+  }
+}
