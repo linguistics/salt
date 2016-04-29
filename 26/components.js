@@ -391,17 +391,36 @@ export const Registration = ({}) =>
 export const Main = ({}) =>
   <div>
     <section>
-      <h1>Announcements!</h1>
+      <h1>Reminders</h1>
 
       <p>
-        <b>We've released the SALT 26 <a href="program">program</a>!</b>
+        SALT 26 is just around the corner; here's your to-do list:
       </p>
 
-      <p>
-        <b>To register</b>, please follow the instructions on the <a href="registration">registration</a> page.
-      </p>
-
-      <p>We've reserved a block of rooms at the DoubleTree Suites. See <a href="local">local</a> for details.</p>
+      <ol>
+        <li><b><a href="registration">Register</a> if you haven't yet!</b>
+          <ul>
+            <li>Attendance is free for UT students and faculty, but registration is required.</li>
+          </ul>
+        </li>
+        <li>
+          Travel: if you were awarded a student scholarship, hang on to your receipts!
+        </li>
+        <li>
+          Lodging: while the deadline for the group rate has passed, you
+          may still be able to reserve a room in our block at the DoubleTree Suites.
+          See <a href="local">local</a> for details.
+        </li>
+        <li>
+          <b>Presenting a poster?</b> Details are on
+          the <a href="instructions#posters">instructions page</a>, but here's the gist:
+          <ul>
+            <li>Recommended size: 4 ft. wide, 3 ft. tall</li>
+            <li>Lightning talk: 3 minutes, maximum</li>
+            <li>If you want to show a couple slides during your talk, email to them us before May 12.</li>
+          </ul>
+        </li>
+      </ol>
     </section>
 
     <section>
