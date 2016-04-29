@@ -350,21 +350,41 @@ export const Registration = ({}) =>
     <section>
       <h2>Registration</h2>
 
-      <p>Registration is a two-step process.</p>
+      <p>
+        <b>Everyone who plans to attend the conference
+        should fill out this <a href="http://goo.gl/forms/7Ed850YQzN">Google form</a>.</b>
+      </p>
+      <ul>
+        <li>UT students and faculty should fill out this form as well.</li>
+        <li>The form includes an option to apply for a student scholarship. <i>Note that scholarships are intended for students without independent travel support.</i>
+        </li>
+      </ul>
 
-      <ol>
+      <p>
+        <b>If you are not affiliated with the University of Texas at Austin</b>,
+        and have not receieved a fee waiver (e.g., as part of a scholarship offer),
+        you will need to <b>pay the registration fee via
+        the <a href="http://salt26.eventbrite.com">Eventbrite payment page</a></b>.
+      </p>
+      <ul>
         <li>
-          First, fill out
-          <a href="http://goo.gl/forms/7Ed850YQzN">this Google form</a>,
-          which includes an option to apply for a student scholarship.
-          <i>Note that scholarships are intended for students without independent travel support.</i>
+          UT faculty, staff, and students may attend the entire SALT 26 conference
+          free of charge, thanks to generous support from the College of Liberal Arts.
+          Please register, though, via the Google form linked above.
         </li>
         <li>
-          Second, pay the registration fee on the
-          <a href="http://salt26.eventbrite.com">Eventbrite payment page</a>.
-          Early registration at a reduced rate is available until April 15.
+          The registration fees, which cover the special session on presupposition, are:
+          <ul>
+            <li>$75 for students</li>
+            <li>$125 for non-students</li>
+          </ul>
         </li>
-      </ol>
+      </ul>
+
+      <p>
+        On site payment of the registration fee will be possible, but we strongly
+        recommend registering prior to arriving in Austin.
+      </p>
     </section>
   </div>;
 
