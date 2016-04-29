@@ -60,6 +60,11 @@ li {
 .drs-box > div {
   padding: 0.5em;
 }
+.drs-store > span,
+.drs-store > b,
+.drs-store > i {
+  padding: 0 4px;
+}
 .drs-tuple {
   display: -webkit-box;
   display: -webkit-flex;
