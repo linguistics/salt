@@ -136,6 +136,9 @@ export const About = ({}) =>
         <li><a href="https://www.utexas.edu/cola/">UT College of Liberal Arts</a></li>
         <li><a href="https://www.utexas.edu/cola/linguistics/">UT Department of Linguistics</a></li>
         <li><a href="https://www.utexas.edu/cola/philosophy/">UT Department of Philosophy</a></li>
+        <li><a href="https://www.utexas.edu/cola/frenchitalian/">UT Department of French & Italian</a></li>
+        <li><a href="https://www.utexas.edu/cola/spanish/">UT Department of Spanish & Portuguese</a></li>
+        <li><a href="https://www.utexas.edu/cola/english/">UT Department of English</a></li>
       </ul>
     </section>
   </div>;
