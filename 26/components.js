@@ -141,7 +141,7 @@ export const About = ({}) =>
   </div>;
 
 const Submission = ({id, author, title, abstract}) => {
-  const abstract_filename = path.join('abstracts', abstract || `${id}.pdf`);
+  const abstract_filename = path.join(__dirname, 'abstracts', abstract || `${id}.pdf`);
   const abstract_exists = fs.existsSync(abstract_filename);
   return (
     <div>
