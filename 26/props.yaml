@@ -279,7 +279,8 @@ days:
       end: '3:30'
       submissions:
         - author: Judith Tonhauser
-          title: TBD
+          title: The prosody of projection
+          abstract: tonhauser.pdf
     - start: '3:45'
       end: '4:25'
       submissions: [*100]
