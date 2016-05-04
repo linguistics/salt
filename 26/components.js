@@ -352,6 +352,27 @@ export const Local = ({}) =>
         Most of the places on the NASSLLI page are still there, but I would recommend checking <a href="https://www.yelp.com/search?find_desc=Restaurants&find_loc=78712">Yelp!</a> or <a href="https://www.google.com/maps/search/Restaurants+near+78712">Google Maps</a> before venturing out.
       </p>
 
+      <h3>Extra coffee</h3>
+      <ul>
+        <li>On Thursday, the closest coffee shop is the Starbucks in the SAC, the building just west of the CLA.</li>
+        <li>On Friday through Sunday, there is a cafe on the first floor, the <a href="http://blantonmuseum.org/visit/cafe_menu/">Blanton Café</a>, which is open:
+          <ul>
+            <li>Mon–Fri: 8am–4pm</li>
+            <li>Sat–Sun: 12pm–4pm</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3 id="parking">Parking</h3>
+      <p>
+        The <a href="http://www.utexas.edu/parking/parking/garages/index.php">UT Parking</a> system has two garages that are near the CLA (Thursday) and very near EAS (Friday-Sunday): the Conference Center garage and the Brazos garage. Their parking rates are hourly, with a maximum of $18 / day.
+      </p>
+      <p>
+        There are private parking lots near / on campus that are cheaper, if not as close or predictable.
+      </p>
+      <p>
+        Due to the central location of the UT campus, you will have to venture about a mile out to find free street parking (I'd recommend looking just east of I-35), and then walk or bus over, but I know of some people who do that.
+      </p>
     </section>
   </div>;
 
