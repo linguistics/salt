@@ -308,11 +308,26 @@ export const Instructions = ({}) =>
 
     </section>
 
-    {/*
-    <section>
+    <section id="presentations">
       <h2>Presentations</h2>
+
+      <h3>Venues</h3>
+      <ul>
+        <li id="cla">CLA (Thursday):
+          <blockquote>
+            The center's custom-built audio/visual presentation systems give easy touch-screen control of LAITS's newest generation of instructional technology.
+          </blockquote>
+          <img src="http://www.utexas.edu/cola/laits/_files/pre_2014_08_files/images/building-services-photos/Photos_Rooms_CLA_1_302B.jpg" style={{maxWidth: '100%'}} />
+        </li>
+        <li id="eas">EAS (Friday-Sunday):
+          <blockquote>
+            The Blanton Auditorium in the Smith Building may be privately rented for special speaker engagements, panel presentations, and film screenings. No food or beverage permitted inside auditorium. The auditorium comes equipped with A/V capabilities with rear digital projection, film screen, and built in seats with tablet arms.
+          </blockquote>
+          <img src="http://blantonmuseum.org/images/bma/about/auditorium.jpg" />{' '}
+          <img src="http://blantonmuseum.org/images/bma/about/smith_adtrm.jpg" />
+        </li>
+      </ul>
     </section>
-    */}
   </div>;
 
 
