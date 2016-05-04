@@ -154,9 +154,16 @@ const Submission = ({id, author, title, abstract}) => {
   );
 };
 
-const Day = ({title, events}) =>
+const Day = ({title, events, location}) =>
   <section>
-    <h1>{title}</h1>
+    <div className="flex-fill">
+      <h1>{title}</h1>
+      <h3>
+        <a href={location.url}>
+          <i>{location.description}</i>
+        </a>
+      </h3>
+    </div>
     {events.map((event, i) =>
       <div key={i} className="event">
         <header>
@@ -436,8 +443,12 @@ export const Main = ({}) =>
         The conference will begin with a special session on presupposition on <time dateTime="2016-05-16">Thursday (May 12)</time>, followed by the main session, which will run <time dateTime="2016-05-13/2016-05-15">Friday to Sunday (May 13–15)</time>.
       </p>
       <ul>
-        <li>Thursday's sessions will be held in the <a href="http://goo.gl/maps/2ucIL">College of Liberal Arts building</a>, on the ground floor, in the Glickman Conference center (exact rooms TBD).</li>
-        <li>All other sessions will take place in the <a href="https://goo.gl/maps/kQbVRD7f2Kv">Edgar A. Smith building</a> (exact rooms TBD).</li>
+        <li>
+          Thursday's sessions will be held in the <a href="https://goo.gl/maps/SX9rSeKZaiC2">College of Liberal Arts building</a>, on the ground floor, in the Glickman Conference center (CLA 1.302).
+        </li>
+        <li>
+          All other sessions will take place in the <a href="https://goo.gl/maps/kQbVRD7f2Kv">Edgar A. Smith building</a> (2nd floor).
+        </li>
       </ul>
     </section>
 

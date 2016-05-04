@@ -1,4 +1,13 @@
 ---
+locations:
+  - &glickman
+    building: CLA
+    description: "Glickman Conference Center, 1.302B"
+    url: https://goo.gl/maps/SX9rSeKZaiC2
+  - &eas
+    building: EAS
+    description: "Blanton (Edgar A. Smith building, 2nd floor)"
+    url: https://goo.gl/maps/kQbVRD7f2Kv
 submissions:
   - &2
     id: 2
@@ -247,6 +256,7 @@ submissions:
 
 days:
 - title: "Thursday, May 12"
+  location: *glickman
   events:
     - start: '8:45'
       end: '9:10'
@@ -300,6 +310,7 @@ days:
       title: Reception (Glickman center patio)
 
 - title: "Friday, May 13"
+  location: *eas
   events:
     - start: '8:00'
       end: '9:00'
@@ -346,6 +357,7 @@ days:
       title: Party at Scholz Garten
 
 - title: "Saturday, May 14"
+  location: *eas
   events:
     - start: '8:30'
       end: '9:00'
@@ -389,6 +401,7 @@ days:
       title: Business meeting
 
 - title: "Sunday, May 15"
+  location: *eas
   events:
     - start: '9:00'
       end: '9:30'
