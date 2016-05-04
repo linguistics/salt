@@ -250,7 +250,7 @@ days:
   events:
     - start: '8:45'
       end: '9:10'
-      title: Registration
+      title: "Registration, coffee, and pastries"
     - start: '9:10'
       end: '9:25'
       title: Opening remarks
@@ -263,6 +263,9 @@ days:
     - start: '10:15'
       end: '10:55'
       submissions: [*57]
+    - start: '10:55'
+      end: '11:10'
+      title: Coffee break
     - start: '11:10'
       end: '11:50'
       submissions: [*137]
@@ -281,6 +284,9 @@ days:
         - author: Judith Tonhauser
           title: The prosody of projection
           abstract: tonhauser.pdf
+    - start: '3:30'
+      end: '3:45'
+      title: Coffee break
     - start: '3:45'
       end: '4:25'
       submissions: [*100]
@@ -297,7 +303,7 @@ days:
   events:
     - start: '8:00'
       end: '9:00'
-      title: Registration and breakfast
+      title: "Registration, coffee, breakfast (tacos, pastries, fruit)"
     - start: '9:00'
       end: '9:10'
       title: Welcome
@@ -305,6 +311,9 @@ days:
       end: '11:15'
       title: Session 1
       submissions: [*2, *45, *55]
+    - start: '11:15'
+      end: '11:40'
+      title: Coffee break
     - start: '11:40'
       end: '12:30'
       title: Poster session lightning talks
@@ -316,6 +325,9 @@ days:
       end: '3:20'
       title: Session 2
       submissions: [*181, *46]
+    - start: '3:20'
+      end: '3:40'
+      title: Coffee break
     - start: '3:40'
       end: '4:30'
       title: Poster session lightning talks
@@ -329,9 +341,9 @@ days:
         - author: Sigrid Beck
           title: Discourse related readings of scalar particles
           abstract: beck.txt
-    - start: '6:30'
+    - start: '7:30'
       end: '10:30'
-      title: Party
+      title: Party at Scholz Garten
 
 - title: "Saturday, May 14"
   events:
@@ -348,6 +360,9 @@ days:
       end: '10:40'
       title: Session 1
       submissions: [*155]
+    - start: '10:40'
+      end: '11:00'
+      title: Coffee break
     - start: '11:00'
       end: '11:50'
       title: Poster session lightning talks
@@ -359,6 +374,9 @@ days:
       end: '3:20'
       title: Session 2
       submissions: [*141, *7, *161]
+    - start: '3:20'
+      end: '3:40'
+      title: Coffee break
     - start: '3:40'
       end: '4:30'
       title: Poster session lightning talks
@@ -379,6 +397,9 @@ days:
       end: '10:50'
       title: Session 1
       submissions: [*76, *166]
+    - start: '10:50'
+      end: '11:10'
+      title: Coffee break
     - start: '11:10'
       end: '12:30'
       title: Session 2
