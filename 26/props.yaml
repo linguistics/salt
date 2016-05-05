@@ -263,7 +263,7 @@ days:
       title: "Registration, coffee, and pastries"
     - start: '9:10'
       end: '9:25'
-      title: Opening remarks
+      title: "Opening remarks from Richard Meier, Linguistics Department Chair"
     - start: '9:25'
       end: '10:15'
       submissions:
@@ -316,16 +316,16 @@ days:
       end: '9:00'
       title: "Registration, coffee, breakfast (tacos, pastries, fruit)"
     - start: '9:00'
-      end: '9:10'
-      title: Welcome
-    - start: '9:10'
-      end: '11:15'
+      end: '9:15'
+      title: "Opening remarks from Randy Diehl, Dean of the College of Liberal Arts"
+    - start: '9:15'
+      end: '11:20'
       title: Session 1
       submissions: [*2, *45, *55]
-    - start: '11:15'
-      end: '11:40'
+    - start: '11:20'
+      end: '11:45'
       title: Coffee break
-    - start: '11:40'
+    - start: '11:45'
       end: '12:30'
       title: Poster session lightning talks
       submissions: [*14, *29, *41, *62, *67, *82, *158, *70, *145, *73]
