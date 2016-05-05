@@ -111,6 +111,15 @@ export const About = ({}) =>
     </section>
 
     <section>
+      <h2>Special session committee</h2>
+
+      <ul>
+        <li>Cleo Condoravdi</li>
+        <li>Stefan Kaufmann</li>
+      </ul>
+    </section>
+
+    <section>
       <h2>Selection committee</h2>
 
       <ul className="selection-committee">
