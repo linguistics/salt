@@ -1,7 +1,12 @@
 {
+  "babel": {
+    "presets": ["es2015", "react"]
+  },
   "dependencies": {
     "autoprefixer": "*",
-    "babel-core": "^5.0.0",
+    "babel-core": "*",
+    "babel-preset-react": "*",
+    "babel-preset-es2015": "*",
     "js-yaml": "3.5.5",
     "less": "*",
     "optimist": "0.6.1",
