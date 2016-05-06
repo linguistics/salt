@@ -176,11 +176,9 @@ const Day = ({title, events, location}) =>
     {events.map((event, i) =>
       <div key={i} className="event">
         <header>
-          <span>{event.start} - {event.end}</span>
-          <span className="spacer">
-            <hr />
-          </span>
-          <span>{event.title}</span>
+          <span>{`${event.start}\xA0-\xA0${event.end}`}</span>
+          <span className="spacer"><hr /></span>
+          <span className="title">{event.title}</span>
         </header>
         <ul className="submissions">
           {(event.submissions || []).map((submission, j) =>
