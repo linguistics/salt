@@ -290,8 +290,8 @@ export const Instructions = ({}) =>
       </ul>
 
       <h3>Local poster printing options</h3>
-      <p>If you want to print your poster here in Austin, here are some options, with current (as of April 2016) price quotesL</p>
-      <ul>
+      <p>If you want to print your poster here in Austin, here are some options, with current (as of April 2016) price quotes:</p>
+      <ul id="printing">
         <li>
            <a href="https://documentsolutions.utexas.edu/copycenters/contact">UT Copy Services</a> quoted me ~$72 for a 48"x36" color (b&w is the same price) poster (alternatively, ~$6 / ft²), with 24-48 hour turn-around. They're only open Monday-Friday 8a-5p, so you would need to place your order before you arrive and pick it up Thursday or Friday. You can get in contact with them via phone: 512-471-1615, or email: <a href="mailto:utcopy@austin.utexas.edu">utcopy@austin.utexas.edu</a>.
         </li>
@@ -318,15 +318,122 @@ export const Instructions = ({}) =>
     <section id="presentations">
       <h2>Presentations</h2>
 
+      <p>
+        Each oral presentation is allotted 40 minutes.
+        Your talk should be 30 minutes long, allowing for 10 minutes of discussion.
+      </p>
+
+      <h3>Slides</h3>
+
+      <p>If you are planning to show slides during your talk, you have two options:</p>
+      <ol>
+        <li>
+          <b>(Recommended)</b> Use the built-in A/V console's Mac to display your slides.
+          This is the easier option, and will hopefully avoid the usual A/V issues.
+          <ul>
+            <li>Please email your slides, as an attachment, to our Box folder, <a href="#">(the salt26/slides Box email)</a>, by midnight on the day before your talk.
+            </li>
+            <li>Box should send you a confirmation email for each file; email us at <a href="mailto:salt26conf@gmail.com"><code>salt26conf@gmail.com</code></a> if you have any trouble.
+            </li>
+            <li>
+              Files emailed to that address will be synced to the A/V console's desktop, and you will be able to open your files from there.
+            </li>
+            <li>
+             Please name your attachment(s) with the following prefix:
+              <div>
+                <code style={{display: 'flex', alignItems: 'center'}}>
+                  <span className="punctuation-large">{'{'}</span>
+                  <div>thursday<br/>friday<br/>saturday<br/>sunday</div>
+                  <span className="punctuation-large">{'}'}</span>-
+                  <span className="punctuation-large">{'{'}</span>
+                  <div>session1<br/>session2<br/>session3</div>
+                  <span className="punctuation-large">{'}'}</span>-
+                  <span>{'{'}</span><i>presenter's last name(s)</i><span>{'}'}</span>
+                </code>
+                (but without the curly braces!) e.g., <code>sunday-session1-brown.ppt</code>, <code>sunday-session1-brown-demo.mp4</code>
+              </div>
+            </li>
+            <li>
+              You can supply PDF, Keynote, PowerPoint, and generally any other format that a basic Mac OS X setup can display.<br/>
+            </li>
+            <li>
+              If you want to share your slides / files with the SALT 26 participants, see <a href="#sharing">sharing</a>, below.
+            </li>
+          </ul>
+        </li>
+        <li>
+          Bring your own laptop, and connect it directly to the A/V system via the VGA (and optionally 3.5mm audio) connectors.
+          <ul>
+            <li>
+              You will be responsible for supplying whatever adapters / power sources your machine might need.
+            </li>
+            <li>
+              This option will give you more flexibility, e.g., if you need to use specific software, but setup delays may encroach into your talk's allotted time if your laptop has trouble connecting to the projector or adapting resolution properly, etc.
+            </li>
+            <li>
+              If you decide you absolutely must use your own laptop, please arrive early on the day of your talk, whenever registration / breakfast is scheduled to begin.
+              Find one of the organizers or ask whoever is manning the registration desk to help you test out your configuration, to clear up any issues before the day's events get started.
+            </li>
+          </ul>
+        </li>
+      </ol>
+
+      <h3>Handouts</h3>
+
+      <p>If you are planning to distribute handouts, you are responsible for printing them.</p>
+
+      <ul>
+        <li>
+          We are expecting somewhere between 100 and 150 participants at each session.
+        </li>
+        <li>
+          We recommend printing your handouts beforehand and bringing them with you, but there are a few local print shops; see the <a href="#printing">poster printing section</a> above for a non-exhaustive list.
+        </li>
+        <li>
+          If you want to distribute handouts digitally, see <a href="#sharing">sharing</a>, below.
+        </li>
+      </ul>
+
+      <h3 id="sharing">Sharing files</h3>
+      <ul>
+        <li>
+          To make slides, handouts, or other materials available to all SALT participants, email them to <a href="#">(the salt26share Box email)</a>.
+        </li>
+        <li>
+          These can be accessed at <a href="#">(the salt26share public URL)</a>; all SALT 26 participants will receive a link to this shared folder shortly before the conference begins.
+        </li>
+        <li>
+          Please use the same naming convention as for slides, described above.
+        </li>
+        <li>
+          You can overwrite existing files by emailing a file with exactly the same filename.
+        </li>
+        <li>
+          These files will be made available on the <a href="http://salt.ling.utexas.edu/26">SALT 26 website</a> shortly after the conference ends. If you don't want your files published on the website, use that overwrite trick to replace your original file with a blank document before May 16, 2016.
+        </li>
+      </ul>
+
       <h3>Venues</h3>
       <ul>
-        <li id="cla">CLA (Thursday):
+        <li id="cla">
+          <div>CLA (Thursday):</div>
+          <ul>
+            <li>Capacity: 110</li>
+            <li>Wireless (lapel) mic</li>
+            <li>The room will be configured without the desks depicted in the photos below</li>
+          </ul>
           <blockquote>
             The center's custom-built audio/visual presentation systems give easy touch-screen control of LAITS's newest generation of instructional technology.
           </blockquote>
           <img src="http://www.utexas.edu/cola/laits/_files/pre_2014_08_files/images/building-services-photos/Photos_Rooms_CLA_1_302B.jpg" style={{maxWidth: '100%'}} />
         </li>
-        <li id="eas">EAS (Friday-Sunday):
+        <li id="eas">
+          <div>EAS (Friday-Sunday):</div>
+          <ul>
+            <li>Capacity: 299</li>
+            <li>There will be a wired microphone, and we are currently trying to procure a wireless mic that will work in that room</li>
+            <li>There is a clicker / laser pointer, but the laser pointer doesn't show up great on white backgrounds</li>
+          </ul>
           <blockquote>
             The Blanton Auditorium in the Smith Building may be privately rented for special speaker engagements, panel presentations, and film screenings. No food or beverage permitted inside auditorium. The auditorium comes equipped with A/V capabilities with rear digital projection, film screen, and built in seats with tablet arms.
           </blockquote>
