@@ -304,7 +304,8 @@ days:
       end: '5:15'
       submissions:
         - author: Stanley Peters
-          title: TBD
+          title: Varieties of Speaker Commitment
+          abstract: peters.html
     - start: '5:30'
       end: '7:00'
       title: Reception (Glickman center patio)
