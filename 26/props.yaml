@@ -330,7 +330,7 @@ days:
       title: Coffee break
     - start: '11:45'
       end: '12:30'
-      title: Poster session lightning talks
+      title: "Poster session lightning talks\n(Posters on display 4:30 - 5:30)"
       submissions: [*14, *29, *41, *62, *67, *82, *158, *70, *145, *73]
     - start: '12:30'
       end: '2:00'
@@ -344,7 +344,7 @@ days:
       title: Coffee break
     - start: '3:40'
       end: '4:30'
-      title: Poster session lightning talks
+      title: "Poster session lightning talks\n(Posters on display 4:30 - 5:30)"
       submissions: [*48, *61, *96, *107, *122, *124, *126, *138, *149, *156, *164]
     - start: '4:30'
       end: '5:30'
@@ -381,7 +381,7 @@ days:
       title: Coffee break
     - start: '11:00'
       end: '11:50'
-      title: Poster session lightning talks
+      title: "Poster session lightning talks\n(Posters on display 4:30 - 5:30)"
       submissions: [*34, *43, *51, *80, *94, *104, *110, *112, *133, *169]
     - start: '11:50'
       end: '1:20'
@@ -395,7 +395,7 @@ days:
       title: Coffee break
     - start: '3:40'
       end: '4:30'
-      title: Poster session lightning talks
+      title: "Poster session lightning talks\n(Posters on display 4:30 - 5:30)"
       submissions: [*37, *42, *60, *63, *65, *103, *106, *109, *129, *135, *139]
     - start: '4:30'
       end: '5:30'
