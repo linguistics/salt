@@ -164,3 +164,9 @@ blockquote {
   padding: 0 1em;
   border-left: 5px solid #AAA;
 }
+#days .day {
+  display: block;
+}
+#days .day.hidden {
+  display: none;
+}
