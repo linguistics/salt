@@ -3,30 +3,6 @@ const path = require('path');
 
 const React = require('react');
 
-export const Script = ({js}) => {
-  const createMarkup = () => ({__html: js});
-  return <script dangerouslySetInnerHTML={createMarkup()} />;
-};
-
-const site_js = `
-  var admin_escapes = 0;
-  document.addEventListener('keyup', function(ev) {
-    if (ev.which == 27) {
-      admin_escapes++;
-    }
-    if (admin_escapes > 1) {
-      document.getElementById('admin').style.display = 'block';
-    }
-  });
-
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  try { ga('create', 'UA-69465853-1', 'auto'); ga('send', 'pageview'); }
-  catch (err) { console.error('Google Analytics error:', err); }
-`;
-
 export const Layout = ({children, version, current_variable}) =>
   <html>
     <head>
@@ -34,6 +10,7 @@ export const Layout = ({children, version, current_variable}) =>
       <title>SALT 26 - Semantics and Linguistic Theory</title>
       <meta name="keywords" content="semantics, linguistics, theory, salt, 26, ut, utexas, ut austin, austin, texas, tx" />
       <meta name="description" content="Semantics and Linguistic Theory (SALT) is the premiere North American conference on Formal Semantics as a part of Linguistic Theory. The 26th SALT will take place on May 12-15, 2016, at The University of Texas at Austin." />
+      <script src={`site.js?t=${version}`}></script>
       <link href={`site.css?t=${version}`} rel="stylesheet" type="text/css" />
       <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
     </head>
@@ -90,7 +67,6 @@ export const Layout = ({children, version, current_variable}) =>
           <div className="punctuation-huge">〉</div>
         </div>
       </div>
-      <Script js={site_js} />
     </body>
   </html>;
 
@@ -163,37 +139,45 @@ const Submission = ({id, author, title, abstract}) => {
   );
 };
 
-const Day = ({title, events, location}) =>
-  <section>
-    <div className="flex-fill">
-      <h1>{title}</h1>
-      <h3>
-        <a href={location.url}>
-          <i>{location.description}</i>
-        </a>
-      </h3>
-    </div>
-    {events.map((event, i) =>
-      <div key={i} className="event">
-        <header>
-          <span>{`${event.start}\xA0-\xA0${event.end}`}</span>
-          <span className="spacer"><hr /></span>
-          <span className="title">{event.title}</span>
-        </header>
-        <ul className="submissions">
-          {(event.submissions || []).map((submission, j) =>
-            <li key={j}>
-              <Submission {...submission} />
-            </li>
-          )}
-        </ul>
-      </div>
-    )}
-  </section>;
-
 export const Program = ({days}) =>
   <div>
-    {days.map((day, i) => <Day key={i} {...day} />)}
+    <div className="flex-fill">
+      <a href="#">Show all</a>
+      {days.map(({name}) =>
+        <a key={name} href={'#' + name.toLowerCase()}>{name}</a>
+      )}
+    </div>
+    <div id="days">
+      {days.map(({name, date, events, location}) =>
+        <section key={name} className={`day ${name.toLowerCase()}`}>
+          <div className="flex-fill">
+            <h1>{name}, {date}</h1>
+            <h3>
+              <a href={location.url}>
+                <i>{location.description}</i>
+              </a>
+            </h3>
+          </div>
+          {events.map((event, i) =>
+            <div key={i} className="event">
+              <header>
+                <span>{`${event.start}\xA0-\xA0${event.end}`}</span>
+                <span className="spacer"><hr /></span>
+                <span className="title">{event.title}</span>
+              </header>
+              <ul className="submissions">
+                {(event.submissions || []).map((submission, j) =>
+                  <li key={j}>
+                    <Submission {...submission} />
+                  </li>
+                )}
+              </ul>
+            </div>
+          )}
+        </section>
+      )}
+    </div>
+    <script>initializeProgram();</script>
   </div>;
 
 export const Help = ({}) =>

@@ -255,7 +255,8 @@ submissions:
     title: The semantics of quotative ideophones
 
 days:
-- title: "Thursday, May 12"
+- name: Thursday
+  date: May 12
   location: *glickman
   events:
     - start: '8:45'
@@ -310,7 +311,8 @@ days:
       end: '7:00'
       title: Reception (Glickman center patio)
 
-- title: "Friday, May 13"
+- name: Friday
+  date: May 13
   location: *eas
   events:
     - start: '8:00'
@@ -357,7 +359,8 @@ days:
       end: '10:30'
       title: Party at Scholz Garten
 
-- title: "Saturday, May 14"
+- name: Saturday
+  date: May 14
   location: *eas
   events:
     - start: '8:30'
@@ -401,7 +404,8 @@ days:
       end: '6:00'
       title: Business meeting
 
-- title: "Sunday, May 15"
+- name: Sunday
+  date: May 15
   location: *eas
   events:
     - start: '9:00'

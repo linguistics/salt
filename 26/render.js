@@ -70,11 +70,19 @@ const routes = [
     },
   },
   {
+    url: 'site.js',
+    handler() {
+      const site_js_path = path.join(__dirname, 'site.js');
+      return fs.readFileSync(site_js_path);
+    },
+  },
+  {
     url: 'site.css',
     handler() {
       return new Promise((resolve, reject) => {
-        var less_string = fs.readFileSync(path.join(__dirname, 'site.less'), {encoding: 'utf8'});
-        less.render(less_string, {}, (error, result) => {
+        const site_less_path = path.join(__dirname, 'site.less');
+        const site_less_string = fs.readFileSync(site_less_path, {encoding: 'utf8'});
+        less.render(site_less_string, {}, (error, result) => {
           if (error) return reject(error);
           resolve(result.css);
         });
