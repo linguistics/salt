@@ -80,7 +80,7 @@ submissions:
   - &60
     id: 60
     author: David Lahm
-    title: "Sentence Internal \"Different\" as a Restriction on Skolem Functions"
+    title: "'Different' as a Restriction on Skolem Functions"
   - &61
     id: 61
     author: Takashi Morita
