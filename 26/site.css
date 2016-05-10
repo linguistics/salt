@@ -112,9 +112,6 @@ li {
   border-radius: 3px;
   padding: 1px 4px 0px;
 }
-ul.submissions {
-  margin: .25em 0;
-}
 .event header {
   display: -webkit-box;
   display: -webkit-flex;
@@ -138,12 +135,24 @@ ul.submissions {
           flex-grow: 1;
   padding: 0 .5ex;
 }
+.event header .spacer hr {
+  border-top: 1px dotted #999;
+}
 .event header .title {
   text-align: right;
   white-space: pre-line;
 }
-.event header hr {
-  border-top: 1px dotted #999;
+.event .chair {
+  margin: .25em 0;
+  padding-left: 20px;
+  font-weight: bold;
+  text-align: left;
+}
+.event .chair:before {
+  content: 'Session chair: ';
+}
+.event .submissions {
+  margin: .25em 0;
 }
 .flex-fill {
   display: -webkit-box;
