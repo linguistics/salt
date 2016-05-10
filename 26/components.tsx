@@ -127,17 +127,6 @@ export const About = ({}) =>
     </section>
   </div>;
 
-const Submission = ({id, author, title, abstract}) => {
-  const abstract_filename = join('abstracts', abstract || `${id}.pdf`);
-  const abstract_exists = existsSync(join(__dirname, abstract_filename));
-  return (
-    <div>
-      <span>{author}: </span>
-      {abstract_exists ? <a href={abstract_filename}><i>{title}</i></a> : <i>{title}</i>}
-    </div>
-  );
-};
-
 export const Program = ({days}) =>
   <div>
     <div className="flex-fill">
@@ -164,14 +153,22 @@ export const Program = ({days}) =>
                 <span className="spacer"><hr /></span>
                 <span className="title">{title}</span>
               </header>
-              {chair &&
-                <div className="chair">{chair}</div>}
+              {chair && <div className="chair">{chair}</div>}
               <ul className="submissions">
-                {submissions.map((submission, j) =>
-                  <li key={j}>
-                    <Submission {...submission} />
-                  </li>
-                )}
+                {submissions.map(({id, author, title, invited, abstract}, j) => {
+                  const abstract_filename = join('abstracts', abstract || `${id}.pdf`);
+                  const abstract_exists = existsSync(join(__dirname, abstract_filename));
+                  return (
+                    <li key={j} className={invited ? 'invited' : ''}>
+                      <div>
+                        {invited ?
+                          <b>Invited speaker, {author}: </b> :
+                          <span>{author}: </span>}
+                        {abstract_exists ? <a href={abstract_filename}><i>{title}</i></a> : <i>{title}</i>}
+                      </div>
+                    </li>
+                  )
+                })}
               </ul>
             </div>
           )}

@@ -258,51 +258,49 @@ days:
       end: '9:25'
       title: "Opening remarks from Richard Meier,\nLinguistics Department Chair"
     - start: '9:25'
-      end: '10:15'
+      end: '10:55'
+      title: Session 1
       submissions:
         - author: Lauri Karttunen
+          invited: true
           title: 'Presupposition: What went wrong?'
           abstract: karttunen.html
-    - start: '10:15'
-      end: '10:55'
-      submissions: [*57]
-      # chair: ?
+        - *57
+      chair: Cleo Condoravdi
     - start: '10:55'
       end: '11:10'
       title: Coffee break
     - start: '11:10'
-      end: '11:50'
-      submissions: [*137]
-      # chair: ?
-    - start: '11:50'
       end: '12:30'
-      submissions: [*92]
+      title: Session 2
+      submissions: [*137, *92]
+      chair: Liz Coppock
     - start: '12:30'
       end: '2:00'
       title: Lunch (on your own)
     - start: '2:00'
-      end: '2:40'
-      submissions: [*69]
-      # chair: ?
-    - start: '2:40'
       end: '3:30'
+      title: Session 3
       submissions:
+        - *69
         - author: Judith Tonhauser
+          invited: true
           title: The prosody of projection
           abstract: tonhauser.pdf
+      chair: David Beaver
     - start: '3:30'
       end: '3:45'
       title: Coffee break
     - start: '3:45'
-      end: '4:25'
-      submissions: [*100]
-      # chair: ?
-    - start: '4:25'
       end: '5:15'
+      title: Session 4
       submissions:
+        - *100
         - author: Stanley Peters
+          invited: true
           title: Varieties of Speaker Commitment
           abstract: peters.html
+      chair: Stefan Kaufmann
     - start: '5:30'
       end: '7:00'
       title: Reception (Glickman center patio)
@@ -353,6 +351,7 @@ days:
       end: '6:30'
       submissions:
         - author: Sigrid Beck
+          invited: true
           title: Discourse related readings of scalar particles
           abstract: beck.txt
       chair: Manfred Krifka
@@ -368,15 +367,14 @@ days:
       end: '9:00'
       title: Coffee and breakfast
     - start: '9:00'
-      end: '10:00'
-      submissions:
-        - author: Kristen Syrett
-          title: 'Word by word: Experimental investigations in the acquisition of the lexicon'
-          abstract: syrett.pdf
-    - start: '10:00'
       end: '10:40'
       title: Session 1
-      submissions: [*155]
+      submissions:
+        - author: Kristen Syrett
+          invited: true
+          title: 'Word by word: Experimental investigations in the acquisition of the lexicon'
+          abstract: syrett.pdf
+        - *155
       chair: Ashwini Deo
     - start: '10:40'
       end: '11:00'
@@ -433,13 +431,12 @@ days:
       end: '1:30'
       title: Lunch (provided)
     - start: '1:30'
-      end: '2:10'
-      title: Session 3
-      submissions: [*28]
-      chair: Hans Kamp
-    - start: '2:10'
       end: '3:10'
+      title: Session 3
       submissions:
+        - *28
         - author: Rick Nouwen
+          invited: true
           title: 'Expressive intensification: expressive intrusion?'
           abstract: nouwen.txt
+      chair: Hans Kamp
