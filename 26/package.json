@@ -1,17 +1,16 @@
 {
-  "babel": {
-    "presets": ["es2015", "react"]
-  },
   "dependencies": {
     "autoprefixer": "*",
-    "babel-core": "*",
-    "babel-preset-react": "*",
-    "babel-preset-es2015": "*",
+    "declarations": "*",
     "js-yaml": "3.5.5",
     "less": "*",
+    "mime-types": "*",
+    "mz": "*",
     "optimist": "0.6.1",
     "postcss": "*",
     "react": "*",
-    "react-dom": "*"
+    "react-dom": "*",
+    "typescript": "*",
+    "urlio": "*"
   }
 }

@@ -1,7 +1,6 @@
-const fs = require('fs');
-const path = require('path');
-
-const React = require('react');
+import {existsSync} from 'fs';
+import {join} from 'path';
+import * as React from 'react';
 
 export const Layout = ({children, version, current_variable}) =>
   <html>
@@ -129,8 +128,8 @@ export const About = ({}) =>
   </div>;
 
 const Submission = ({id, author, title, abstract}) => {
-  const abstract_filename = path.join('abstracts', abstract || `${id}.pdf`);
-  const abstract_exists = fs.existsSync(path.join(__dirname, abstract_filename));
+  const abstract_filename = join('abstracts', abstract || `${id}.pdf`);
+  const abstract_exists = existsSync(join(__dirname, abstract_filename));
   return (
     <div>
       <span>{author}: </span>
@@ -534,7 +533,7 @@ export const Registration = ({}) =>
     </section>
   </div>;
 
-export const Main = ({}) =>
+export const Index = ({}) =>
   <div>
     <section>
       <h1>Reminders</h1>
