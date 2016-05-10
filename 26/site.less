@@ -107,28 +107,38 @@ p, li {
   }
 }
 
-ul.submissions {
-  margin: .25em 0;
-}
-.event header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+.event {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 
-  font-size: 110%;
-  font-weight: bold;
+    font-size: 110%;
+    font-weight: bold;
 
-  .spacer {
-    flex-grow: 1;
-    padding: 0 .5ex;
+    .spacer {
+      flex-grow: 1;
+      padding: 0 .5ex;
+      hr {
+        border-top: 1px dotted #999;
+      }
+    }
+    .title {
+      text-align: right;
+      white-space: pre-line;
+    }
   }
-  .title {
-    text-align: right;
-    white-space: pre-line;
+  .chair {
+    margin: .25em 0;
+    padding-left: 20px;
+    font-weight: bold;
+    text-align: left;
+    &:before {
+      content: 'Session chair: ';
+    }
   }
-
-  hr {
-    border-top: 1px dotted #999;
+  .submissions {
+    margin: .25em 0;
   }
 }
 

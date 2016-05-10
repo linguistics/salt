@@ -158,15 +158,17 @@ export const Program = ({days}) =>
               </a>
             </h3>
           </div>
-          {events.map((event, i) =>
-            <div key={i} className="event">
+          {events.map(({start, end, title, chair, submissions = []}) =>
+            <div key={start} className="event">
               <header>
-                <span>{`${event.start}\xA0-\xA0${event.end}`}</span>
+                <span>{`${start}\xA0-\xA0${end}`}</span>
                 <span className="spacer"><hr /></span>
-                <span className="title">{event.title}</span>
+                <span className="title">{title}</span>
               </header>
+              {chair &&
+                <div className="chair">{chair}</div>}
               <ul className="submissions">
-                {(event.submissions || []).map((submission, j) =>
+                {submissions.map((submission, j) =>
                   <li key={j}>
                     <Submission {...submission} />
                   </li>
