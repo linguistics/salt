@@ -363,7 +363,7 @@ days:
         - author: Sigrid Beck
           title: Discourse related readings of scalar particles
           abstract: beck.txt
-      # chair: Manfred Krifka
+      chair: Manfred Krifka
     - start: '7:30'
       end: '10:30'
       title: Party at Scholz Garten
@@ -401,7 +401,7 @@ days:
       end: '3:20'
       title: Session 2
       submissions: [*141, *7, *161]
-      # chair: Rick Nouwen
+      chair: Rick Nouwen
     - start: '3:20'
       end: '3:40'
       title: Coffee break
@@ -444,7 +444,7 @@ days:
       end: '2:10'
       title: Session 3
       submissions: [*28]
-      # chair: Hans Kamp
+      chair: Hans Kamp
     - start: '2:10'
       end: '3:10'
       submissions:
