@@ -57,10 +57,6 @@ submissions:
     id: 46
     author: Robert Henderson
     title: Pluractional Demonstrations
-  - &48
-    id: 48
-    author: Pauline Jacobson
-    title: "Variable Names Don't Matter (and aren't needed)"
   - &51
     id: 51
     author: Ciyang Qing
@@ -89,10 +85,6 @@ submissions:
     id: 62
     author: Clemens Mayr and Jacopo Romoli
     title: "Satisfied or exhaustified: an ambiguity account of the proviso problem"
-  - &63
-    id: 63
-    author: Serge Minor
-    title: Weak vs Strong Distributivity and a Two-Component Theory of Number
   - &65
     id: 65
     author: Julie Hunter and Nicholas Asher
@@ -336,7 +328,7 @@ days:
     - start: '11:45'
       end: '12:30'
       title: "Poster session lightning talks (on display 4:30 - 5:30)"
-      submissions: [*14, *29, *41, *62, *67, *82, *158, *70, *145, *73]
+      submissions: [*62, *67, *70, *145, *41, *82, *29, *158, *14, *73]
       chair: Cleo Condoravdi
     - start: '12:30'
       end: '2:00'
@@ -352,7 +344,7 @@ days:
     - start: '3:40'
       end: '4:30'
       title: "Poster session lightning talks (on display 4:30 - 5:30)"
-      submissions: [*48, *61, *96, *107, *122, *124, *126, *138, *149, *156, *164]
+      submissions: [*124, *61, *96, *107, *122, *126, *138, *156, *164, *149]
       # chair: Josh Dever
     - start: '4:30'
       end: '5:30'
@@ -392,7 +384,7 @@ days:
     - start: '11:00'
       end: '11:50'
       title: "Poster session lightning talks (on display 4:30 - 5:30)"
-      submissions: [*34, *43, *51, *80, *94, *104, *110, *112, *133, *169]
+      submissions: [*43, *94, *51, *80, *104, *110, *133, *169, *112, *34]
       chair: David Beaver
     - start: '11:50'
       end: '1:20'
@@ -408,7 +400,7 @@ days:
     - start: '3:40'
       end: '4:30'
       title: "Poster session lightning talks (on display 4:30 - 5:30)"
-      submissions: [*37, *42, *60, *63, *65, *103, *106, *109, *129, *135, *139]
+      submissions: [*65, *106, *109, *129, *135, *139, *103, *42, *37, *60]
       chair: Stephen Wechsler
     - start: '4:30'
       end: '5:30'
