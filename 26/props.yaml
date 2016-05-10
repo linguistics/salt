@@ -325,6 +325,7 @@ days:
       end: '11:20'
       title: Session 1
       submissions: [*2, *45, *55]
+      chair: Christopher Potts
     - start: '11:20'
       end: '11:45'
       title: Coffee break
@@ -332,6 +333,7 @@ days:
       end: '12:30'
       title: "Poster session lightning talks\n(Posters on display 4:30 - 5:30)"
       submissions: [*14, *29, *41, *62, *67, *82, *158, *70, *145, *73]
+      chair: Cleo Condoravdi
     - start: '12:30'
       end: '2:00'
       title: Lunch on your own
@@ -339,6 +341,7 @@ days:
       end: '3:20'
       title: Session 2
       submissions: [*181, *46]
+      chair: Kristen Syrett
     - start: '3:20'
       end: '3:40'
       title: Coffee break
@@ -355,6 +358,7 @@ days:
         - author: Sigrid Beck
           title: Discourse related readings of scalar particles
           abstract: beck.txt
+      # chair: Manfred Krifka
     - start: '7:30'
       end: '10:30'
       title: Party at Scholz Garten
@@ -376,6 +380,7 @@ days:
       end: '10:40'
       title: Session 1
       submissions: [*155]
+      chair: Ashwini Deo
     - start: '10:40'
       end: '11:00'
       title: Coffee break
@@ -390,6 +395,7 @@ days:
       end: '3:20'
       title: Session 2
       submissions: [*141, *7, *161]
+      # chair: Rick Nouwen
     - start: '3:20'
       end: '3:40'
       title: Coffee break
@@ -397,6 +403,7 @@ days:
       end: '4:30'
       title: "Poster session lightning talks\n(Posters on display 4:30 - 5:30)"
       submissions: [*37, *42, *60, *63, *65, *103, *106, *109, *129, *135, *139]
+      chair: Stephen Wechsler
     - start: '4:30'
       end: '5:30'
       title: Poster session
@@ -415,6 +422,7 @@ days:
       end: '10:50'
       title: Session 1
       submissions: [*76, *166]
+      chair: John Beavers
     - start: '10:50'
       end: '11:10'
       title: Coffee break
@@ -422,6 +430,7 @@ days:
       end: '12:30'
       title: Session 2
       submissions: [*59, *157]
+      chair: Annie Zaenen
     - start: '12:30'
       end: '1:30'
       title: Lunch (provided)
@@ -429,6 +438,7 @@ days:
       end: '2:10'
       title: Session 3
       submissions: [*28]
+      # chair: Hans Kamp
     - start: '2:10'
       end: '3:10'
       submissions:
