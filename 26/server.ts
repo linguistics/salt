@@ -13,10 +13,7 @@ import * as urlio from 'urlio';
 import * as React from 'react';
 import * as ReactServer from 'react-dom/server';
 
-const commonPropsPromise = readFile(join(__dirname, 'props.yaml'), {encoding: 'utf8'}).then(props_yaml => {
-  const commonProps = js_yaml.safeLoad(props_yaml);
-  return Object.assign({}, commonProps, {version: process.env.VERSION});
-});
+const propsFilepath = join(__dirname, 'props.yaml');
 
 const pages = [
   {name: 'About',        current_variable: 'a'},
@@ -42,8 +39,11 @@ const routes: Route[] = [
       delete require.cache[require.resolve('./components')];
       const components = require('./components');
       const Component = components[name];
-      return commonPropsPromise.then(commonProps => {
-        const props = Object.assign({}, commonProps, {current_variable});
+      return readFile(propsFilepath, {encoding: 'utf8'}).then(props_yaml => {
+        return js_yaml.safeLoad(props_yaml);
+      }).then(commonProps => {
+        const version = process.env.VERSION;
+        const props = Object.assign({}, commonProps, {current_variable, version});
         const element = React.createElement(components.Layout, props,
           React.createElement(Component, props)
         );
