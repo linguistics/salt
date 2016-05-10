@@ -393,7 +393,7 @@ days:
       end: '11:50'
       title: "Poster session lightning talks (on display 4:30 - 5:30)"
       submissions: [*34, *43, *51, *80, *94, *104, *110, *112, *133, *169]
-      # chair: David Beaver
+      chair: David Beaver
     - start: '11:50'
       end: '1:20'
       title: Lunch
