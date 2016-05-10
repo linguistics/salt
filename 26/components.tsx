@@ -547,11 +547,23 @@ export const Registration = ({}) =>
 export const Index = ({}) =>
   <div>
     <section>
-      <h1>Reminders</h1>
+      <h2>Announcements</h2>
 
-      <p>
-        SALT 26 is just around the corner; here's your to-do list:
-      </p>
+      <ul>
+        <li>
+          Due to higher-than-anticipated registration numbers, Thursday's sessions have been moved to the <a href="https://goo.gl/maps/uKevjdcJa4M2">Student Activity Center</a> Ballroom, which is located on the second floor of the SAC (2.410). We will be on the far (north) half of the ballroom.
+        </li>
+        <li>
+          The reception following the Thursday sessions will still be held in the <a href="https://goo.gl/maps/SX9rSeKZaiC2">College of Liberal Arts building</a>, on the ground floor, in the Glickman Conference center (CLA 1.302).
+        </li>
+        <li>
+          Friday, Saturday, and Sunday sessions will take place in the <a href="https://goo.gl/maps/kQbVRD7f2Kv">Edgar A. Smith building</a> (2nd floor).
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Reminders</h2>
 
       <ol>
         <li><b><a href="registration">Register</a> if you haven't yet!</b>
@@ -588,14 +600,6 @@ export const Index = ({}) =>
       <p>
         The conference will begin with a special session on presupposition on <time dateTime="2016-05-16">Thursday (May 12)</time>, followed by the main session, which will run <time dateTime="2016-05-13/2016-05-15">Friday to Sunday (May 13–15)</time>.
       </p>
-      <ul>
-        <li>
-          Thursday's sessions will be held in the <a href="https://goo.gl/maps/SX9rSeKZaiC2">College of Liberal Arts building</a>, on the ground floor, in the Glickman Conference center (CLA 1.302).
-        </li>
-        <li>
-          All other sessions will take place in the <a href="https://goo.gl/maps/kQbVRD7f2Kv">Edgar A. Smith building</a> (2nd floor).
-        </li>
-      </ul>
     </section>
 
     <section>
@@ -612,13 +616,6 @@ export const Index = ({}) =>
         Edit Doron has had to stand down as a speaker due to a scheduling conflict: she will be <a href="http://new.huji.ac.il/en/article/28904">receiving the prestigious Israel Prize</a>, the highest honor offered by the state. Congratulations Edit!
         </i>
       </p>
-    </section>
-
-    <section>
-      <h2>Call for Abstracts</h2>
-
-      <p>We are accepting submissions of abstracts via EasyChair <b>until December 20, 2015</b>.
-      See the <a href="call">Call for Abstracts</a> page for full details, requirements, and policies.</p>
     </section>
 
     <section>

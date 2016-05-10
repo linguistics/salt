@@ -1,5 +1,9 @@
 ---
 locations:
+  - &sac
+    building: SAC
+    description: "Student Activity Center Ballroom, 2.410"
+    url: https://goo.gl/maps/uKevjdcJa4M2
   - &glickman
     building: CLA
     description: "Glickman Conference Center, 1.302B"
@@ -249,7 +253,7 @@ submissions:
 days:
 - name: Thursday
   date: May 12
-  location: *glickman
+  location: *sac
   events:
     - start: '8:45'
       end: '9:10'
@@ -303,7 +307,7 @@ days:
       chair: Stefan Kaufmann
     - start: '5:30'
       end: '7:00'
-      title: Reception (Glickman center patio)
+      title: "Reception (Glickman Conference Center, CLA 1.302)"
 
 - name: Friday
   date: May 13
