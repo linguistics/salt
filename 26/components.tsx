@@ -433,21 +433,35 @@ export const Instructions = ({}) =>
 export const Local = ({}) =>
   <div>
     <section>
-      <h3>DoubleTree</h3>
+      <h3>DoubleTree Suites by Hilton</h3>
+
+      <p id="directions">Directions to the hotel from the airport:</p>
+      <ul>
+        <li>
+          <a href="http://doubletree3.hilton.com/en/hotels/texas/doubletree-suites-by-hilton-hotel-austin-AUSFLDT/maps-directions/index.html">On the DoubleTree website</a>: the 'Super Shuttle' costs $13, drops you off at the hotel, and should be booked in advance. A cab will cost $20-25.
+        </li>
+        <li>
+          The <a href="http://www.capmetro.org/airport/">MetroAirport Bus</a> (#100) leaves from the airport every 30 minutes, costs $1.75, and has a stop (15th St and Trinity) about a 10 minute walk from the hotel. (<a href="https://goo.gl/maps/ECJqLPS1VRC2">Google Maps directions</a>)
+        </li>
+        <li>
+          <i>N.b.</i> As of May 9<sup>th</sup> 2016, Uber and Lyft have decided to stop (Uber) or pause (Lyft) operations in Austin, due to city council regulations.
+        </li>
+      </ul>
+
       <p>
         We have reserved a block of 30 rooms at the <a href="http://doubletree.hilton.com/en/dt/groups/personalized/A/AUSFLDT-SLT-20160511/index.jhtml?WT.mc_id=POG">DoubleTree Suites by Hilton Hotel</a>, for the dates of May 11 (check-in) through May 16 (check-out).
         The address is <a href="https://www.google.com/maps/place/DoubleTree+Suites+by+Hilton+Hotel+Austin,+303+W+15th+St,+Austin,+TX+78701">303 W 15th St, Austin, TX 78701</a> (the corner of 15th and Lavaca), which is about half a mile from where most of SALT will take place.
       </p>
 
-      <p>Please use this personalized reservation page to access our group rates:
-        <a href="http://doubletree.hilton.com/en/dt/groups/personalized/A/AUSFLDT-SLT-20160511/index.jhtml?WT.mc_id=POG"><small><code>http://doubletree.hilton.com/en/dt/groups/personalized/A/AUSFLDT-SLT-20160511/index.jhtml?WT.mc_id=POG</code></small></a>
-      </p>
+      <div style={{opacity: '.25'}}>
+        <p>
+          Please use this personalized reservation page to access our group rates: <a href="http://doubletree.hilton.com/en/dt/groups/personalized/A/AUSFLDT-SLT-20160511/index.jhtml?WT.mc_id=POG"><small><code>http://doubletree.hilton.com/en/dt/groups/personalized/A/AUSFLDT-SLT-20160511/index.jhtml?WT.mc_id=POG</code></small></a>
+        </p>
 
-      <p><b>The special rate ($200 / night) block offer expires at 1 AM on April 14th, 2016.</b></p>
+        <p>You can also make a reservation over the phone; call 800-222-8733 and mention the group code "SLT".</p>
 
-      <p>You can also make a reservation over the phone; call 800-222-8733 and mention the group code "SLT".</p>
-
-      <p>If you reserve a room at the DoubleTree Suites, or plan to, please let us know via email (<a href="mailto:salt26conf@gmail.com">salt26conf@gmail.com</a>) so that, if demand exceeds our expectations, we can request more rooms to be added to the block.</p>
+        <p><b>The special rate ($200 / night) block offer expired at 1 AM on April 14th, 2016.</b></p>
+      </div>
 
       <h3>Alternatives</h3>
       <p>
