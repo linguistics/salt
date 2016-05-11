@@ -179,3 +179,25 @@ blockquote {
 #days .day.hidden {
   display: none;
 }
+@media print {
+  body {
+    background: none;
+  }
+  .drop {
+    display: none !important;
+  }
+  .drs-box {
+    border: none !important;
+  }
+  .drs-box .banner {
+    border-bottom: 3px double #222222;
+  }
+  nav {
+    display: none !important;
+  }
+  a:link,
+  a:visited {
+    color: #222;
+    text-decoration: none;
+  }
+}
