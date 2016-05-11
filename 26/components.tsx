@@ -129,12 +129,12 @@ export const About = ({}) =>
 
 export const Program = ({days}) =>
   <div>
-    <div className="flex-fill">
+    <nav className="flex-fill">
       <a href="#">Show all</a>
       {days.map(({name}) =>
         <a key={name} href={'#' + name.toLowerCase()}>{name}</a>
       )}
-    </div>
+    </nav>
     <div id="days">
       {days.map(({name, date, events, location}) =>
         <section key={name} className={`day ${name.toLowerCase()}`}>

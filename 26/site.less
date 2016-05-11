@@ -163,3 +163,27 @@ blockquote {
     }
   }
 }
+
+@media print {
+  body {
+    background: none;
+  }
+  .drop {
+    display: none !important;
+  }
+  .drs-box {
+    border: none !important;
+    .banner {
+      border-bottom: 3px double @drs-color;
+    }
+  }
+  nav {
+    display: none !important;
+  }
+  a {
+    &:link, &:visited {
+      color: #222;
+      text-decoration: none;
+    }
+  }
+}
