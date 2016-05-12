@@ -271,15 +271,15 @@ days:
           abstract: karttunen.html
         - *57
       chair: Cleo Condoravdi
-    - start: '10:55'
-      end: '11:10'
-      title: Coffee break
     - start: '11:10'
-      end: '12:30'
+      end: '11:25'
+      title: Coffee break
+    - start: '11:25'
+      end: '12:45'
       title: Session 2
       submissions: [*137, *92]
-      chair: Liz Coppock
-    - start: '12:30'
+      chair: Judith Tonhauser
+    - start: '12:45'
       end: '2:00'
       title: Lunch (on your own)
     - start: '2:00'
