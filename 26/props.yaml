@@ -347,7 +347,7 @@ days:
       end: '4:30'
       title: "Poster session lightning talks (on display 4:30 - 5:30)"
       submissions: [*124, *61, *96, *107, *122, *126, *138, *156, *164, *149]
-      # chair: Josh Dever
+      chair: Tammi Stout
     - start: '4:30'
       end: '5:30'
       title: Poster session & refreshments
