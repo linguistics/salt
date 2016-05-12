@@ -100,3 +100,23 @@ Templates for the various emails we delivered to authors and reviewers are avail
 - **2016-01-30** [reviewer-response.txt](email/reviewer-response.txt): The "SALT 26 author response ends; reviewer response begins" EasyChair notification was sent out to 276 reviewers (those that had previously submitted reviews).
 - **2016-03-11** [program-announcement.txt](email/program-announcement.txt): The "SALT 26 Program Announcement" email was sent out to 632 addresses on the semantics mailing list (which now includes all of the EasyChair authors, "corresponding" or not).
 - **2016-03-14** [accepted-abstract-request.txt](email/accepted-abstract-request.txt): The "SALT 26 Publicity" email was sent out to the 88 corresponding authors of 61 papers.
+
+
+### Misc. Comments / Advice
+
+* Even if all the relevant information is online, or in an email, people love printouts. Here's some of the stuff we printed and made available at the registration desk:
+  - Wi-fi access information
+  - Public URL to shared Box.com folder
+  - Campus map with relevant buildings & nearby parking highlighted
+  - Full program on single page, 2-up and double-sided (it was handy to have a print-friendly program on the website for this purpose)
+* Deadlines:
+  - Even if there is no hard deadline, practically, make one up. People love deadlines.
+  - If you want to receive an email by the time X rolls around, choose your wording carefully. "Email it to us before X" seems to confuse some people. "Email it to us by (X-1)" or "Email it to us. Deadline: (X-1)" works better.
+  - Depending on the purpose, a lot of people will be late. Box.com's "Email to upload" feature is really handy, so that you don't have to worry about transferring last-minute email attachments to the presentation console.
+  - If you can figure out a way to say "even if you miss the deadline, send it along anyway and we can probably still make it work" without softening the sense of deadline, that might allay some time-consuming questions.
+* Despite having recently entered the 21st century, A/V is still finicky.
+  - Have a dedicated laptop for presentation purposes
+    + Have it plugged in, so that it can just sit there all day
+    + This also helps ensure there are no time-wasting scrambles to find the appropriate video adapter or power sources
+    + Strongly suggest that all presenters submit their slides beforehand. See above about deadlines and Box.com.
+  - Sync a Dropbox / Box.com folder on that machine. The cloud / web is a far more trustworthy and fluid information transmission device than any presentation setup (as long as you have wi-fi).
