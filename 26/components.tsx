@@ -547,7 +547,7 @@ export const Registration = ({}) =>
 export const Index = ({}) =>
   <div>
     <section>
-      <h2>Announcements</h2>
+      <h2>Location announcements</h2>
 
       <ul>
         <li>
@@ -563,32 +563,33 @@ export const Index = ({}) =>
     </section>
 
     <section>
-      <h2>Reminders</h2>
+      <h2>Other notes</h2>
 
-      <ol>
+      <ul>
         <li><b><a href="registration">Register</a> if you haven't yet!</b>
           <ul>
             <li>Attendance is free for UT students and faculty, but registration is required.</li>
           </ul>
         </li>
         <li>
-          Travel: if you were awarded a student scholarship, hang on to your receipts!
+          Deadline for lightning talk slides: should be emailed to us before May 12.
         </li>
         <li>
-          Lodging: while the deadline for the group rate has passed, you
-          may still be able to reserve a room in our block at the DoubleTree Suites.
-          See <a href="local">local</a> for details.
+          Suggested submission time for accepted talk slides: end of day before your talk.
         </li>
         <li>
-          <b>Presenting a poster?</b> Details are on
-          the <a href="instructions#posters">instructions page</a>, but here's the gist:
+          Admission to the <a href="http://blantonmuseum.org/">Blanton Museum of Art</a> is free for all SALT attendees on Friday, Saturday, and Sunday. <small>(In my opinion, the Blanton is the best art museum in Austin, and it's right next door to the EAS, where those days' sessions are taking place.)</small> <a href="http://blantonmuseum.org/visit/hours_and_admission/">Hours</a>:
           <ul>
-            <li>Recommended size: 4 ft. wide, 3 ft. tall</li>
-            <li>Lightning talk: 3 minutes, maximum</li>
-            <li>If you want to show a couple slides during your talk, email to them us before May 12.</li>
+            <li>Fri. 10am – 5pm</li>
+            <li>Sat. 11am - 5pm</li>
+            <li>Sun. 1pm - 5pm</li>
           </ul>
+          I think you can just tell the people at the front desk that you're attending a conference in the Edgar A. Smith building, but if there's a password or something, I'll update this page.
         </li>
-      </ol>
+        <li>
+          If you've got a car, you can park in the <a href="http://www.utexas.edu/parking/parking/garages/brg.php">Brazos garage</a> for $4 / day (no re-entry) on Friday, Saturday, and Sunday. Bring your parking ticket with you to the sessions, and then jag over to the Blanton proper during one of the breaks, sometime within their business hours (listed above), to get it validated. (Parking on Thursday is not discounted.)
+        </li>
+      </ul>
     </section>
 
     <section>
@@ -599,6 +600,14 @@ export const Index = ({}) =>
       </p>
       <p>
         The conference will begin with a special session on presupposition on <time dateTime="2016-05-16">Thursday (May 12)</time>, followed by the main session, which will run <time dateTime="2016-05-13/2016-05-15">Friday to Sunday (May 13–15)</time>.
+      </p>
+      <div style={{textAlign: 'center'}}>
+        <a href="http://www.linguisticsociety.org/join">
+          <img src="img/lsa.png" />
+        </a>
+      </div>
+      <p>
+        The Proceedings of SALT 26 will be published by Cornell and the LSA, as usual, and will be available at the <a href="http://journals.linguisticsociety.org/proceedings/index.php/SALT/index">SALT Proceedings webpage</a> once published. If you want to join the LSA, they are offering SALT participants a <a href="abstracts/lsa-membership.pdf">20% discount</a> on membership fees.
       </p>
     </section>
 
