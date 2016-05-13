@@ -250,6 +250,16 @@ submissions:
     author: Rebekah Baglini
     title: The semantics of quotative ideophones
 
+lightningtalks:
+  - id: friday-morning
+    submissions: &friday-morning [*62, *67, *70, *145, *41, *82, *29, *158, *14, *73]
+  - id: friday-afternoon
+    submissions: &friday-afternoon [*124, *61, *96, *107, *122, *126, *138, *156, *164, *149]
+  - id: saturday-morning
+    submissions: &saturday-morning [*43, *94, *51, *80, *104, *110, *133, *169, *112, *34]
+  - id: saturday-afternoon
+    submissions: &saturday-afternoon [*65, *106, *109, *129, *135, *139, *103, *42, *37, *60]
+
 days:
 - name: Thursday
   date: May 12
@@ -330,7 +340,7 @@ days:
     - start: '11:45'
       end: '12:30'
       title: "Poster session lightning talks (on display 4:30 - 5:30)"
-      submissions: [*62, *67, *70, *145, *41, *82, *29, *158, *14, *73]
+      submissions: *friday-morning
       chair: Cleo Condoravdi
     - start: '12:30'
       end: '2:00'
@@ -346,7 +356,7 @@ days:
     - start: '3:40'
       end: '4:30'
       title: "Poster session lightning talks (on display 4:30 - 5:30)"
-      submissions: [*124, *61, *96, *107, *122, *126, *138, *156, *164, *149]
+      submissions: *friday-afternoon
       chair: Tammi Stout
     - start: '4:30'
       end: '5:30'
@@ -386,7 +396,7 @@ days:
     - start: '11:00'
       end: '11:50'
       title: "Poster session lightning talks (on display 4:30 - 5:30)"
-      submissions: [*43, *94, *51, *80, *104, *110, *133, *169, *112, *34]
+      submissions: *saturday-morning
       chair: David Beaver
     - start: '11:50'
       end: '1:20'
@@ -402,7 +412,7 @@ days:
     - start: '3:40'
       end: '4:30'
       title: "Poster session lightning talks (on display 4:30 - 5:30)"
-      submissions: [*65, *106, *109, *129, *135, *139, *103, *42, *37, *60]
+      submissions: *saturday-afternoon
       chair: Stephen Wechsler
     - start: '4:30'
       end: '5:30'
