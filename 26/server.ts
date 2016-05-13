@@ -1,6 +1,6 @@
 import {IncomingMessage, ServerResponse, createServer} from 'http';
-// import {readFileSync, writeFileSync} from 'fs';
-import {readFile, writeFile} from 'mz/fs';
+import {spawn, ChildProcess} from 'child_process';
+import {readFile, writeFile, exists, createReadStream, createWriteStream} from 'mz/fs';
 import {join, extname} from 'path';
 const js_yaml = require('js-yaml');
 import * as less from 'less';
@@ -15,6 +15,8 @@ import * as ReactServer from 'react-dom/server';
 
 const propsFilepath = join(__dirname, 'props.yaml');
 
+const boxSyncDirpath = join(process.env.HOME, 'Box Sync');
+
 const pages = [
   {name: 'About',        current_variable: 'a'},
   {name: 'Call',         current_variable: 'c'},
@@ -25,6 +27,23 @@ const pages = [
   {name: 'Program',      current_variable: 'p'},
   {name: 'Registration', current_variable: 'r'},
 ];
+
+interface Submission {
+  id: string;
+  author: string;
+  title: string;
+}
+interface Session {
+  id?: string;
+  submissions: Submission[];
+}
+interface Props {
+  lightningtalks: Session[];
+}
+
+function submissionName(submission: Submission): string {
+  return submission.author.split(/,|\s+and\s+/)[0].match(/[-\w']+$/)[0].toLowerCase();
+}
 
 interface Route {
   url: string;
@@ -101,6 +120,43 @@ export function start(port: number = 7258, hostname: string = '127.0.0.1') {
   server.listen(port, hostname);
 }
 
+/** Returns the filepath of the title slide for the indicated lightning talk, generating it if needed */
+function prepareTitleSlide(session: Session, submission: Submission): Promise<string> {
+  const name = submissionName(submission);
+  const filepath = join(boxSyncDirpath, 'salt26', 'lightning', 'titles', `${session.id}-${name}.pdf`);
+  return exists(filepath).then(filepathExists => {
+    if (filepathExists) {
+      return filepath;
+    }
+    else {
+      console.error(`Generating ${filepath}`);
+      return readFile(join(__dirname, 'title-template.html'), {encoding: 'utf8'}).then(templateHtml => {
+        const titleHtml = templateHtml
+          .replace('TITLE', submission.title)
+          .replace('AUTHOR', submission.author);
+        return new Promise<string>((resolve, reject) => {
+          const wkhtmltopdf = spawn('wkhtmltopdf', ['--page-width', '5in', '--page-height', '4in', '-', filepath]);
+          wkhtmltopdf.stdin.end(titleHtml);
+          wkhtmltopdf.on('close', () => {
+            console.error(`Generated ${filepath}`);
+            resolve(filepath);
+          }).on('error', reject);
+        });
+      });
+    }
+  });
+}
+
+function prepareSlidePair(session: Session, submission: Submission): Promise<string[]> {
+  return prepareTitleSlide(session, submission).then(titleSlideFilepath => {
+    const name = submissionName(submission);
+    const submittedSlidesFilepath = join(boxSyncDirpath, 'salt26', 'lightning', `${session.id}-${name}.pdf`);
+    return exists(submittedSlidesFilepath).then(submittedSlidesFilepathExists => {
+      return [titleSlideFilepath, ...(submittedSlidesFilepathExists ? [submittedSlidesFilepath] : [])];
+    });
+  });
+}
+
 // node_modules/.bin/tsc --watch
 function main() {
   const argv = optimist.options({
@@ -130,6 +186,38 @@ function main() {
       console.log('Done');
     }, error => {
       console.log('Error: ', error.stack);
+    });
+  }
+  else if (command === 'lightning-sessions') {
+    // const root = '~/BoxSync/salt26/lightning';
+    return readFile(propsFilepath, {encoding: 'utf8'}).then(props_yaml => {
+      return js_yaml.safeLoad(props_yaml);
+    }).then((props: Props) => {
+      // return a list of two strings if they submitted slides (the title slide
+      // and submission), or just one string (the title slide) if they didn't.
+      props.lightningtalks.map(session => {
+        Promise.all<string[]>(
+          session.submissions.map(submission => {
+            return prepareSlidePair(session, submission);
+          })
+        ).then(filenamess => {
+          const filenames = [].concat(...filenamess);
+          console.log('pdftk \\');
+          filenames.forEach(filename => {
+            console.log(`    "${filename}" \\`);
+          });
+          console.log('  cat output -');
+          const pdftk_process = spawn('pdftk', [...filenames, 'cat', 'output', '-']);
+
+          const targetFilepath = join(boxSyncDirpath, 'salt26', `lightning-${session.id}-all.pdf`);
+          console.error(`Writing ${targetFilepath}`);
+          const targetStream = createWriteStream(targetFilepath);
+          pdftk_process.stdout.pipe(targetStream);
+        }, (error) => {
+          console.error('root level error', error);
+        });
+
+      });
     });
   }
   else {
