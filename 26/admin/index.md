@@ -113,10 +113,20 @@ Templates for the various emails we delivered to authors and reviewers are avail
   - Even if there is no hard deadline, practically, make one up. People love deadlines.
   - If you want to receive an email by the time X rolls around, choose your wording carefully. "Email it to us before X" seems to confuse some people. "Email it to us by (X-1)" or "Email it to us. Deadline: (X-1)" works better.
   - Depending on the purpose, a lot of people will be late. Box.com's "Email to upload" feature is really handy, so that you don't have to worry about transferring last-minute email attachments to the presentation console.
-  - If you can figure out a way to say "even if you miss the deadline, send it along anyway and we can probably still make it work" without softening the sense of deadline, that might allay some time-consuming questions.
+  - Box.com can be configured to send confirmations for each emailed file. People love confirmations that they did something.
+  - If you do ask for submissions to be emailed, you might periodically remind people that saving an email to their 'Drafts' folder does not count as sending it to you. Manually replying to every incoming email to confirm is infeasible, and anyway, email is one of the most reliable forms of communication (apart from user error).
+  - If you can figure out a way to say "even if you miss the deadline, send it along anyway and we can probably still make it work" without softening the sense of deadline, that might allay some time-consuming questions. For example, it's much easier to handle a late submission than to reply to an email saying "I'm sorry! I realize I'm late but can I still submit?" (_sans_ attachment) and subsequently handle an even later submission.
 * Despite having recently entered the 21st century, A/V is still finicky.
   - Have a dedicated laptop for presentation purposes
     + Have it plugged in, so that it can just sit there all day
+    + On-the-fly fixes: the snappier the better. If you're getting a loaner laptop, get something that's new and fast. It's not a single point of failure, since laptops are a commodity, but mending the failure takes (wastes) time.
     + This also helps ensure there are no time-wasting scrambles to find the appropriate video adapter or power sources
     + Strongly suggest that all presenters submit their slides beforehand. See above about deadlines and Box.com.
   - Sync a Dropbox / Box.com folder on that machine. The cloud / web is a far more trustworthy and fluid information transmission device than any presentation setup (as long as you have wi-fi).
+* Lightning talks:
+  - Don't allow people to zoom/pan on their slides. This confuses Preview.app / Acrobat Reader, and disrupts subsequent presenters (though, of the two, Reader makes it marginally easier to recover from this). This can be part of the instructions, or by only giving the lightning talk presenters a slide clicker, rather than access to the presentation device desktop.
+* Organization:
+  - Figure out what people plan to do during their session, so that you know to pester them to submit their slides if they want to show slides.
+  - Even if you make it crystal clear how submitted files should be named, lots of people will find it difficult to follow these kinds of directions. I'm beginning to think there should be a sort of administrative checklist, where people can check whether they have satisfied some requirement, and would be responsible for ensuring that it's checked before some deadline.
+    + Part of that admin back-end could be automated, where somebody's "talk is uploaded correctly" box doesn't get checked until there's a file with the proper name in the proper folder.
+    + For something that can't be automated, e.g., someone's "has been awarded scholarship" box, that would be configurable manually by one of the administrators.
