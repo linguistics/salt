@@ -113,7 +113,7 @@ export const About = ({}) =>
       </ul>
     </section>
 
-    <section>
+    <section id="sponsors">
       <h2>SALT 26 is sponsored by:</h2>
 
       <ul>
@@ -124,6 +124,96 @@ export const About = ({}) =>
         <li><a href="https://www.utexas.edu/cola/spanish/">UT Department of Spanish & Portuguese</a></li>
         <li><a href="https://www.utexas.edu/cola/english/">UT Department of English</a></li>
       </ul>
+    </section>
+
+    <section id="thanks">
+      <h2>Special thanks to:</h2>
+
+      <p>Our local organizing committee's fearless leader, for conceiving of, among other things, the salt shaker stress-toy memorabilia:</p>
+
+      <ul>
+        <li><b>David Beaver</b></li>
+      </ul>
+
+      <p>Our (UT Austin Linguistics') administrative manager, for comprehensively handling logistics: scheduling, reservations, budgeting, payments, and so much more.</p>
+
+      <ul>
+        <li><b>Liz Myrick</b></li>
+      </ul>
+
+      <p>Our local graduate student "volunteers," for making sure (mostly<sup>‡</sup>) everything ran smoothly:</p>
+
+      <ul>
+        <li><b>Christopher Brown</b></li>
+        <li><b>Tammi Stout</b></li>
+      </ul>
+
+      <small><sup>‡</sup> Sorry about the rain on Saturday.</small>
+
+      <p>Other linguistics graduate students (from UT and elsewhere) who volunteered<sup>¤</sup> their time:</p>
+
+      <ul>
+        <li><b>Joseph Deveaugh-Geiss</b></li>
+        <li><b>Katya Levina</b></li>
+        <li><b>Conni Loos</b></li>
+      </ul>
+
+      <small><sup>¤</sup> Literally.</small>
+
+      <p>For the content, by the numbers,</p>
+
+      <ul>
+        <li>the <b>248 authors</b> who submitted <b>182 abstracts</b>,</li>
+        <li>the <b>277 reviewers</b> who facilitated SALT's continued dedication to high quality research,</li>
+        <li>and the <b>123 authors</b> who contributed to <b>40 posters</b> and <b>19 oral presentations</b>.</li>
+      </ul>
+
+      <p>Our invited speakers:</p>
+
+      <ul>
+        <li><b>Lauri Karttunen</b></li>
+        <li><b>Judith Tonhauser</b></li>
+        <li><b>Stanley Peters</b></li>
+        <li><b>Sigrid Beck</b></li>
+        <li><b>Kristen Syrett</b></li>
+        <li><b>Rick Nouwen</b></li>
+      </ul>
+
+      <p>The SALT 25 organizers, for good advice, fast responses, and keeping detailed records that were extremely useful to reference when making our own preparations:</p>
+
+      <ul>
+        <li><b>Christopher Potts</b></li>
+        <li><b>Beth Levin</b></li>
+      </ul>
+
+      <p>The University of Maryland organizing committee (in advance), for hosting SALT 27:</p>
+
+      <ul>
+        <li><b>Alexander Williams</b></li>
+        <li><b>Valentine Hacquard</b></li>
+      </ul>
+
+      <p>University of Texas at Austin delegates, for their support and warm introductions:</p>
+
+      <ul>
+        <li><b>Randy Diehl</b>, Dean of the College of Liberal Arts</li>
+        <li><b>Richard Meier</b>, Chair of the Linguistics Department</li>
+      </ul>
+
+      <p>Blanton museum staff, for accommodating us in their beautiful space:</p>
+
+      <ul>
+        <li><b>Stacey Hoyt</b></li>
+        <li><b>Lily Alpern</b></li>
+      </ul>
+
+      <p>University of Texas at Austin linguistics undergraduates who helped out:</p>
+
+      <ul>
+        <li><b>Lydia White</b></li>
+        <li><b>Karina Zemel</b></li>
+      </ul>
+
     </section>
   </div>;
 
