@@ -1,8 +1,7 @@
-<!-- [ { "apply": "markdown" }, { "apply": "wrap", "filepath": "../layout.html", "replace": "{}" }, { "apply": "interpolate", "pattern": "\\{version\\}", "js": "process.env.VERSION" } ] -->
-
 # SALT 26 admin
 
-This page documents the administration of SALT 26. The main SALT 26 website is available at [salt.ling.utexas.edu/26](http://salt.ling.utexas.edu/26/).
+This page documents the administration of SALT 26.
+The main SALT 26 website is available at [salt.ling.utexas.edu/26](http://salt.ling.utexas.edu/26/).
 
 
 ## Abstract submission and review process
@@ -100,6 +99,20 @@ Templates for the various emails we delivered to authors and reviewers are avail
 - **2016-01-30** [reviewer-response.txt](email/reviewer-response.txt): The "SALT 26 author response ends; reviewer response begins" EasyChair notification was sent out to 276 reviewers (those that had previously submitted reviews).
 - **2016-03-11** [program-announcement.txt](email/program-announcement.txt): The "SALT 26 Program Announcement" email was sent out to 632 addresses on the semantics mailing list (which now includes all of the EasyChair authors, "corresponding" or not).
 - **2016-03-14** [accepted-abstract-request.txt](email/accepted-abstract-request.txt): The "SALT 26 Publicity" email was sent out to the 88 corresponding authors of 61 papers.
+- **2016-07-05** [survey.txt](email/survey.txt): The "SALT 26 Survey" email was sent to 297 corresponding abstract authors and registered participants.
+
+
+### Survey
+
+The survey was based on NYU's 2014 survey, and administered via [Qualtrics](https://utexas.qualtrics.com/).
+The exported schema (not data) of the final version, in Qualtrics format, is available at [`survey.qsf`](survey.qsf).
+
+There are four blocks/pages:
+
+1. Demographics, shown to everyone, asking for conference participation level, academic status, and gender
+2. Conference details, shown if the participation level was "Conference attendee"
+3. Review process, shown if the participation level was "Abstract author" or "Author reviewer"
+4. Final page, shown to everyone, asking about the special session
 
 
 ### Misc. Comments / Advice
