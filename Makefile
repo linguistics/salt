@@ -14,6 +14,7 @@ dev:
 
 render: 26/server.js
 	cp -R 26/abstracts/ ../salt-gh-pages/26/abstracts/
+	cp -R 26/shared/ ../salt-gh-pages/26/shared/
 	cp -R 26/img/ ../salt-gh-pages/26/img/
 	VERSION=$(REVISION) node 26/server.js render --out ../salt-gh-pages/26/
 
