@@ -1,6 +1,6 @@
 import {IncomingMessage, ServerResponse, createServer} from 'http';
 import {spawn, ChildProcess} from 'child_process';
-import {readFile, writeFile, exists, createReadStream, createWriteStream} from 'mz/fs';
+import {readFile, writeFile, exists, createReadStream, createWriteStream, readdir} from 'mz/fs';
 import {join, extname} from 'path';
 const js_yaml = require('js-yaml');
 import * as less from 'less';
@@ -45,6 +45,14 @@ function submissionName(submission: Submission): string {
   return submission.author.split(/,|\s+and\s+/)[0].match(/[-\w']+$/)[0].toLowerCase();
 }
 
+function findFiles() {
+  return Promise.all(
+    ['abstracts', 'shared'].map(dirpath => {
+      return readdir(join(__dirname, dirpath));
+    })
+  ).then(([abstracts, shared]) => ({abstracts, shared}));
+}
+
 interface Route {
   url: string;
   handler({params}): Promise<Buffer>;
@@ -58,11 +66,13 @@ const routes: Route[] = [
       delete require.cache[require.resolve('./components')];
       const components = require('./components');
       const Component = components[name];
-      return readFile(propsFilepath, {encoding: 'utf8'}).then(props_yaml => {
+      const commonPropsPromise = readFile(propsFilepath, {encoding: 'utf8'}).then(props_yaml => {
         return js_yaml.safeLoad(props_yaml);
-      }).then(commonProps => {
+      });
+      const filesPromise = findFiles();
+      return Promise.all([commonPropsPromise, filesPromise]).then(([commonProps, files]) => {
         const version = process.env.VERSION;
-        const props = Object.assign({}, commonProps, {current_variable, version});
+        const props = Object.assign({}, commonProps, {current_variable, version, files});
         const element = React.createElement(components.Layout, props,
           React.createElement(Component, props)
         );

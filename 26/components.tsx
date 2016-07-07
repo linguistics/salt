@@ -1,5 +1,3 @@
-import {existsSync} from 'fs';
-import {join} from 'path';
 import * as React from 'react';
 
 export const Layout = ({children, version, current_variable}) =>
@@ -217,7 +215,7 @@ export const About = ({}) =>
     </section>
   </div>;
 
-export const Program = ({days}) =>
+export const Program = ({days, files}) =>
   <div>
     <nav className="flex-fill">
       <a href="#">Show all</a>
@@ -246,15 +244,21 @@ export const Program = ({days}) =>
               {chair && <div className="chair">{chair}</div>}
               <ul className="submissions">
                 {submissions.map(({id, author, title, invited, abstract}, j) => {
-                  const abstract_filename = join('abstracts', abstract || `${id}.pdf`);
-                  const abstract_exists = existsSync(join(__dirname, abstract_filename));
+                  const abstract_filename = `${abstract || `${id}.pdf`}`;
+                  const abstract_exists = files.abstracts.includes(abstract_filename);
+                  const shared_file_regExp = new RegExp(`^${id}-(\\w+)`);
+                  const shared_files = files.shared.filter(file => shared_file_regExp.test(file));
                   return (
                     <li key={j} className={invited ? 'invited' : ''}>
                       <div>
                         {invited ?
                           <b>Invited speaker, {author}: </b> :
                           <span>{author}: </span>}
-                        {abstract_exists ? <a href={abstract_filename}><i>{title}</i></a> : <i>{title}</i>}
+                        {abstract_exists ? <a href={`abstracts/${abstract_filename}`}><i>{title}</i></a> : <i>{title}</i>}
+                        {shared_files.map(shared_file => {
+                          const match = shared_file.match(shared_file_regExp);
+                          return <span key={shared_file}> [<a href={`shared/${shared_file}`}>{match[1]}</a>]</span>;
+                        })}
                       </div>
                     </li>
                   )
