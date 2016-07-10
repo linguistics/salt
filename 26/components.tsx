@@ -19,21 +19,23 @@ export const Layout = ({children, version, current_variable}) =>
             <div className="drs-store">
               <i>m</i>
               <i>p</i>
-              <i>r</i>
+              <i><del>r</del></i>
               <i>a</i>
               <i>l</i>
               <i>i</i>
               <i><del>c</del></i>
+              <i>s</i>
             </div>
             <div>
               <ul>
                 <li><a href=".">main(m)</a></li>
                 <li><a href="program">program(p)</a></li>
-                <li><a href="registration">registration(r)</a></li>
+                <li><a href="registration"><del>registration(r)</del></a></li>
                 <li><a href="about">about(a)</a></li>
                 <li><a href="local">local(l)</a></li>
                 <li><a href="instructions">instructions(i)</a></li>
                 <li><a href="call"><del>call for abstracts(c)</del></a></li>
+                <li><a href="proceedings">proceedings(s)</a></li>
               </ul>
               {current_variable &&
                 <ul>
@@ -273,30 +275,32 @@ export const Program = ({days, files}) =>
   </div>;
 
 export const Help = ({}) =>
-  <section>
-    <h2>EasyChair troubleshooting</h2>
+  <div>
+    <section>
+      <h2>EasyChair troubleshooting</h2>
 
-    <h4>Reviewers only having "author" role access</h4>
+      <h4>Reviewers only having "author" role access</h4>
 
-    As a reviewer, you should have the "PC" role on EasyChair. If you log into EasyChair and appear to have only the role of "author", the email address associated with your reviewer identity is most likely different from the one you're currently logged in with. To determine what email address EasyChair associated with your reviewer identity, look at the "To:" field of an email notification you've received from EasyChair.
-    <br />
-    To resolve this issue you can either log out and then log back in with the email address associated with your reviewer account, or follow the steps below to link your primary account with the other email address:
+      <p>As a reviewer, you should have the "PC" role on EasyChair. If you log into EasyChair and appear to have only the role of "author", the email address associated with your reviewer identity is most likely different from the one you're currently logged in with. To determine what email address EasyChair associated with your reviewer identity, look at the "To:" field of an email notification you've received from EasyChair.</p>
 
-    <ol>
-      <li>Login to EasyChair with your usual account and find the "My account"
-        link in the dropdown menu under "EasyChair"</li>
-      <li>In the "Email Addresses" section, add a "New alternative address" with
-        the <i>exact</i> email address that a (reviewing-related) EasyChair notification was sent to.</li>
-      <li>EasyChair will send an email to that address to confirm that you have access to that account.</li>
-      <li>Open that email and click the URL to confirm, which should take you back to the EasyChair site.</li>
-    </ol>
+      <p>To resolve this issue you can either log out and then log back in with the email address associated with your reviewer account, or follow the steps below to link your primary account with the other email address:</p>
 
-    In rarer cases, you may have two distinct EasyChair accounts, and it won't
-    allow you add an "alternative address." In that case, you have to "merge" the
-    two accounts. Go to "My account" under the "EasyChair" dropdown in the main
-    horizontal navigation bar. At the bottom of that page there is a
-    "Merge accounts" section that will merge the other account into your current account.
-  </section>;
+      <ol>
+        <li>Login to EasyChair with your usual account and find the "My account"
+          link in the dropdown menu under "EasyChair"</li>
+        <li>In the "Email Addresses" section, add a "New alternative address" with
+          the <i>exact</i> email address that a (reviewing-related) EasyChair notification was sent to.</li>
+        <li>EasyChair will send an email to that address to confirm that you have access to that account.</li>
+        <li>Open that email and click the URL to confirm, which should take you back to the EasyChair site.</li>
+      </ol>
+
+      <p>In rarer cases, you may have two distinct EasyChair accounts, and it won't
+      allow you add an "alternative address." In that case, you have to "merge" the
+      two accounts. Go to "My account" under the "EasyChair" dropdown in the main
+      horizontal navigation bar. At the bottom of that page there is a
+      "Merge accounts" section that will merge the other account into your current account.</p>
+    </section>
+  </div>;
 
 export const Instructions = ({}) =>
   <div>
@@ -641,67 +645,32 @@ export const Registration = ({}) =>
 export const Index = ({}) =>
   <div>
     <section>
-      <h2>Location announcements</h2>
+      <h2>Announcements</h2>
 
       <ul>
         <li>
-          Due to higher-than-anticipated registration numbers, Thursday's sessions have been moved to the <a href="https://goo.gl/maps/uKevjdcJa4M2">Student Activity Center</a> Ballroom, which is located on the second floor of the SAC (2.410). We will be on the far (north) half of the ballroom.
+          Many (but not yet all) slides and handouts have been added to the <a href="program">program</a>.
         </li>
         <li>
-          The reception following the Thursday sessions will still be held in the <a href="https://goo.gl/maps/SX9rSeKZaiC2">College of Liberal Arts building</a>, on the ground floor, in the Glickman Conference center (CLA 1.302).
+          Information on the proceedings can be found on the <a href="proceedings">proceedings</a> page.
         </li>
         <li>
-          Friday, Saturday, and Sunday sessions will take place in the <a href="https://goo.gl/maps/kQbVRD7f2Kv">Edgar A. Smith building</a> (2nd floor).
+          Andy Rogers has posted photographs on <a href="https://andyrogers.smugmug.com/SALT-26-May-1215-2016-Universi">SmugMug</a>.
         </li>
       </ul>
-    </section>
 
-    <section>
-      <h2>Other notes</h2>
-
-      <ul>
-        <li><b><a href="registration">Register</a> if you haven't yet!</b>
-          <ul>
-            <li>Attendance is free for UT students and faculty, but registration is required.</li>
-          </ul>
-        </li>
-        <li>
-          Deadline for lightning talk slides: should be emailed to us before May 12.
-        </li>
-        <li>
-          Suggested submission time for accepted talk slides: end of day before your talk.
-        </li>
-        <li>
-          Admission to the <a href="http://blantonmuseum.org/">Blanton Museum of Art</a> is free for all SALT attendees on Friday, Saturday, and Sunday. <small>(In my opinion, the Blanton is the best art museum in Austin, and it's right next door to the EAS, where those days' sessions are taking place.)</small> <a href="http://blantonmuseum.org/visit/hours_and_admission/">Hours</a>:
-          <ul>
-            <li>Fri. 10am – 5pm</li>
-            <li>Sat. 11am - 5pm</li>
-            <li>Sun. 1pm - 5pm</li>
-          </ul>
-          I think you can just tell the people at the front desk that you're attending a conference in the Edgar A. Smith building, but if there's a password or something, I'll update this page.
-        </li>
-        <li>
-          If you've got a car, you can park in the <a href="http://www.utexas.edu/parking/parking/garages/brg.php">Brazos garage</a> for $4 / day (no re-entry) on Friday, Saturday, and Sunday. Bring your parking ticket with you to the sessions, and then jag over to the Blanton proper during one of the breaks, sometime within their business hours (listed above), to get it validated. (Parking on Thursday is not discounted.)
-        </li>
-      </ul>
+      <p>Got any photos you'd like to link here or materials to add to the program?<br />
+        Email us at <a href="mailto:salt26conf@gmail.com"><code>salt26conf@gmail.com</code></a></p>
     </section>
 
     <section>
       <h2>About</h2>
 
       <p>
-        The 26th conference on Semantics and Linguistic Theory (SALT) will be held at the <a href="http://www.utexas.edu/">University of Texas at Austin</a> <time dateTime="2016-05-12/2016-05-15">from Thursday, May 12, to Sunday, May 15, 2016</time>.
+        The 26th conference on Semantics and Linguistic Theory (SALT) was held at the <a href="http://www.utexas.edu/">University of Texas at Austin</a> <time dateTime="2016-05-12/2016-05-15">from Thursday, May 12, to Sunday, May 15, 2016</time>.
       </p>
       <p>
-        The conference will begin with a special session on presupposition on <time dateTime="2016-05-16">Thursday (May 12)</time>, followed by the main session, which will run <time dateTime="2016-05-13/2016-05-15">Friday to Sunday (May 13–15)</time>.
-      </p>
-      <div style={{textAlign: 'center'}}>
-        <a href="http://www.linguisticsociety.org/join">
-          <img src="img/lsa.png" />
-        </a>
-      </div>
-      <p>
-        The Proceedings of SALT 26 will be published by Cornell and the LSA, as usual, and will be available at the <a href="http://journals.linguisticsociety.org/proceedings/index.php/SALT/index">SALT Proceedings webpage</a> once published. If you want to join the LSA, they are offering SALT participants a <a href="abstracts/lsa-membership.pdf">20% discount</a> on membership fees.
+        The conference began with a special session on presupposition on <time dateTime="2016-05-12">Thursday (May 12)</time>, followed by the main session, which ran <time dateTime="2016-05-13/2016-05-15">Friday to Sunday (May 13–15)</time>.
       </p>
     </section>
 
@@ -720,16 +689,16 @@ export const Index = ({}) =>
         </i>
       </p>
     </section>
-
-    <section>
-      <h3>Questions?</h3>
-
-      <p>Email us at <a href="mailto:salt26conf@gmail.com"><code>salt26conf@gmail.com</code></a></p>
-    </section>
   </div>;
 
 export const Call = ({}) =>
   <div>
+    <section>
+      <h3>Proceedings</h3>
+
+      <p>See <a href="proceedings">proceedings</a> for all proceedings information.</p>
+    </section>
+
     <section>
       <h1>SALT 26 Call for Abstracts</h1>
       <p>The 26th conference on Semantics and Linguistic Theory will take place on May 12–15, 2016, at The University of Texas at Austin. There will be keynote presentations by:</p>
@@ -788,12 +757,6 @@ export const Call = ({}) =>
     </section>
 
     <section>
-      <h3>Proceedings</h3>
-
-      <p>All papers presented at the main or the special session of the conference will be published in a SALT 26 volume following the conclusion of the conference, edited at Cornell University and published by the <a href="http://www.linguisticsociety.org/">Linguistic Society of America</a>.</p>
-    </section>
-
-    <section>
       <h2>EasyChair instructions</h2>
 
       <p>On the EasyChair submission page, there are several additional options to pay attention to:</p>
@@ -807,5 +770,55 @@ export const Call = ({}) =>
       <p>
         <b>Submit your abstract here</b>: <a href="https://easychair.org/conferences/?conf=salt26"><code>https://easychair.org/conferences/?conf=salt26</code></a>
       </p>
+    </section>
+  </div>;
+
+export const Proceedings = ({}) =>
+  <div>
+    <section>
+      <h2>Proceedings of SALT 26</h2>
+
+      <p>All papers presented at the main or the special session of the conference will be published in the SALT 26 proceedings. As with preceding years, this volume will be edited by Cornell University and published by the <a href="http://www.linguisticsociety.org/">Linguistic Society of America</a>, and will be available at the <a href="http://journals.linguisticsociety.org/proceedings/index.php/SALT/index">SALT Proceedings webpage</a> once published.
+      </p>
+
+      <div style={{textAlign: 'center'}}>
+        <a href="http://www.linguisticsociety.org/join">
+          <img src="img/lsa.png" />
+        </a>
+      </div>
+
+      <p>Thanks, Cornell and LSA!</p>
+
+      <h3>Publication timeline</h3>
+
+      <ul>
+        <li>May 31, 2016 - Authors receive the SALT instruction packet</li>
+        <li>August 1, 2016 - The submission deadline</li>
+        <li>September 1, 2016 - August 1 submissions receive revisions</li>
+        <li>October 1, 2016 - Revisions due; no new submissions are accepted after this date</li>
+        <li>October 15, 2016 - First batch of papers are published</li>
+        <li>December 15, 2016 - No revisions accepted after this date</li>
+      </ul>
+
+      <p>All instructions for submitting to the SALT 26 proceedings can be found in the <a href="http://conf.ling.cornell.edu/salt/26/salt_instructions26.zip"><code>salt_instructions26.zip</code></a> zip file.</p>
+
+      <h3>Citing</h3>
+
+      <p>Papers will not have DOIs until published, but example references can be found in SALT 25's bibliography: <a href="http://conf.ling.cornell.edu/salt/25/salt25.bib"><code>salt25.bib</code></a>.</p>
+
+      <p>Depending on your bibliography style, a plaintext reference to a SALT proceedings publication might look like the following example from SALT 25:</p>
+
+      <pre>{`Snider, Todd & Adam Bjorndahl. 2015. Informative counterfactuals. In
+    Sarah D’Antonio, Mary Moroney & Carol-Rose Little (eds.), Semantics
+    and Linguistic Theory (SALT) 25, 1–17. LSA and CLC Publications.
+    http://dx.doi.org/10.3765/salt.v25i0.3077.`}</pre>
+
+      <p>BibTeX referring to SALT 26 papers should have these fields:</p>
+      <pre>{`    volume={26},
+    editor={Moroney, Mary and Little, Carol-Rose and Collard, Jacob and
+            Burgdorf, Dan},
+    ISSN={2163-5951}`}</pre>
+
+      <p>(Thanks to Mary Moroney for these suggestions!)</p>
     </section>
   </div>;

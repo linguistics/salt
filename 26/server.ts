@@ -26,6 +26,7 @@ const pages = [
   {name: 'Local',        current_variable: 'l'},
   {name: 'Program',      current_variable: 'p'},
   {name: 'Registration', current_variable: 'r'},
+  {name: 'Proceedings',  current_variable: 's'},
 ];
 
 interface Submission {
