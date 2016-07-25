@@ -102,6 +102,38 @@ Templates for the various emails we delivered to authors and reviewers are avail
 - **2016-07-05** [survey.txt](email/survey.txt): The "SALT 26 Survey" email was sent to 297 corresponding abstract authors and registered participants.
 
 
+### Considerations when evaluating payment processors
+
+(Extracted from an email thread from mid-February 2016)
+
+The UT-internal service "TX Shop" is what we used for [NASSLLI 2012](http://nasslli2012.com/) and it was a pain to set up and explain on the NASSLLI registration page, but reliable enough once it was up and people were told exactly how to use it. I forget what fee we paid then, but they would charge a flat $700 setup fee for setting up a new "shop" for SALT registrations.
+
+[PayPal](https://www.paypal.com/webapps/mpp/merchant-fees), [Square](https://squareup.com/online-store), and [Stripe](https://stripe.com/us/pricing) are all solid online payment processors that operate at our (small) scale, and all charge 2.9% + $0.30 per sale. PayPal has a slightly lower rate for non-profits (2.2% + $0.30), but it's unclear if that'd apply to us, and Square currently has a promo for online sales (2.75% + $0.30). [TLS](http://tls.ling.utexas.edu/) has been using PayPal since 2012 (four conferences so far), and in my experience, it works great for that.
+
+If we wanted something specialized for event registration, [EventBrite](https://www.eventbrite.com/fees/) charges 5.5% + $0.99.
+
+* Stanford used [Certain](https://www.certain.com/event-management/online-registration/), which I've never heard of before, and which doesn't specify their fees on their public website. I get the impression Stanford has an ongoing deal with them, based on Stanford + Certain search results.
+* I can't tell what NYU (SALT 24 in 2014) used.
+* UCSC (SALT 23 in 2013) isn't even loading for me right now and the WayBack Machine didn't capture their payment page, but it looks like something internal to UCSC.
+* UChicago's (SALT 22 in 2012) registration page has only dead links.
+* Rutgers (SALT 21 in 2011) used PayPal.
+* Simon Fraser's (SALT 20 in 2010) registration form has been closed, but it looks internal to SFU.
+
+Just as a ballpark estimate, if we charge what Stanford did — $40 / student, $80 / faculty for the early-bird rate — and have 50 students and 50 faculty register, that's $6000. PayPal's (or the others') fees would add up to $204.
+
+Under the same ballpark estimate ($6000 of fees across 100 transactions), EventBrite would cost $429. But I don't think we need any of the additional features of EventBrite, like discount codes or availability periods.
+
+**Results and rationale**
+
+Despite EventBrite's exorbitant fees (more than twice those of other processors), we ended up going with them because they have an option to mail you a physical check a week or two after the end of the payment period, which is convenient.
+
+* We did use their cut-off date functionality for early-bird registrations, but that could easily have been done, e.g. on PayPal, by logging on and changing the names and prices of the two products (student vs. faculty) on that date.
+* We didn't use any of their other event-oriented functionality, like discount codes or ticket scanning on-site.
+* We did process a number of refunds and changed some of the ordering data manually, which was easy, but again, I expect those basic tasks on other platforms are similarly easy.
+
+Finally, my EventBrite fees estimate ended up only $18 off what we actually paid in fees.
+
+
 ### Survey
 
 The survey was based on NYU's 2014 survey, and administered via [Qualtrics](https://utexas.qualtrics.com/).
