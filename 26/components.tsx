@@ -645,14 +645,15 @@ export const Registration = ({}) =>
 export const Index = ({}) =>
   <div>
     <section>
+      <h2>Proceedings update!</h2>
+
+      <p>Submitting to the proceedings and have questions? Please read the <a href="proceedings">proceedings</a> page first to see if your question has an answer there.</p>
+
       <h2>Announcements</h2>
 
       <ul>
         <li>
           Many (but not yet all) slides and handouts have been added to the <a href="program">program</a>.
-        </li>
-        <li>
-          Information on the proceedings can be found on the <a href="proceedings">proceedings</a> page.
         </li>
         <li>
           Andy Rogers has posted photographs on <a href="https://andyrogers.smugmug.com/SALT-26-May-1215-2016-Universi">SmugMug</a>.
@@ -776,6 +777,11 @@ export const Call = ({}) =>
 export const Proceedings = ({}) =>
   <div>
     <section>
+      <h3>Questions about deadlines? Formatting? Indecipherable LaTeX errors?</h3>
+
+      <p>Please email your proceedings-related questions to the team at Cornell (their address is in the instruction packet you received), <em>not</em> to salt26conf@gmail.com.
+      </p>
+
       <h2>Proceedings of SALT 26</h2>
 
       <p>All papers presented at the main or the special session of the conference will be published in the SALT 26 proceedings. As with preceding years, this volume will be edited by Cornell University and published by the <a href="http://www.linguisticsociety.org/">Linguistic Society of America</a>, and will be available at the <a href="http://journals.linguisticsociety.org/proceedings/index.php/SALT/index">SALT Proceedings webpage</a> once published.
