@@ -103,6 +103,79 @@ Templates for the various emails we delivered to authors and reviewers are avail
 - **2016-07-26** [reviewing-thanks.txt](email/reviewing-thanks.txt): The "Thank you from SALT at UT Austin!!!" email was sent out to 277 active reviewers (including authors and registered participants, so there was some overlap with the previous survey email), and included the survey link.
 
 
+## EasyChair
+
+### Evaluations of open source conference software
+
+This [List of Open Source Conference Management Systems](https://feeding.cloud.geek.nz/posts/list-of-open-source-conference/) blog post from 2010 lists some of the software out there, and the comments point to additional options.
+
+I spent a few hours trying out some of those options, along with a few others I came across on GitHub. It's pretty bleak.
+
+* Act: Perl, ancient, couldn't even get the install script to run, documentation is non-existent
+* ConMan: Python (Django), couldn't figure out which version of Django it required (I tried three and then gave up)
+* zookeepr: Python (Django), starts okay, seems to have a lot of features, but also a lot of relics from the event they implemented it for (some Australian Linux conference in 2011)
+* SlickChair: Scala, runs without too much effort, but I have no clue how to add an admin user and there's no documentation
+* HotCRP: PHP, runs without too much trouble, has support for topics. Seems promising, but uploading a PDF failed, since it tried to stick in the database, but apparently didn't like the default collation / recent version of MySQL. I didn't waste any time debugging.
+* OCS (from the OJS people): PHP, runs pretty easily, but it feels like OJS, just with "journal" replaced with "conference" -- there's a keywords field, but I don't see where to add topics.
+* Pentabarf: Ruby on Rails, tedious manual install process, I gave up.
+* Summit: Python (Django), got it all installed, I think, only to get some THEME_MEDIA error when I open up the main page
+* OpenConferenceWare: Ruby on Rails, it starts up and runs okay, but doesn't have nearly enough flexibility
+* Scalereg: Python (Django), ran into database initialization issues in the second setup step.
+
+Interesting exercise, though depressing (makes you really question the value/contribution of throwing together some random project and then open-sourcing it).
+
+For our purposes, OCS seemed like the only feasible one out of all of these, and it still left a lot to be desired.
+
+One upside of going through this ordeal was that EasyChair became much more palatable, by comparison with the alternatives.
+
+Another proprietary / commercial option is [START V2 ConferenceManager](http://softconf.com/), which we didn't evaluate, but also seems to be widely used. The word on Twitter, though, is that START makes EasyChair look good.
+
+
+### Some notes (a list of grievances)
+
+**tl;dr**: EasyChair is not the worst, but it's a pity that it's the best.
+
+EasyChair is surprisingly common.
+I subscribe to a mailing list called "Corpora-List" (hosted by uib.no), and searching my email for "easychair" in that folder shows an EasyChair URL approximately every 2 days — and that's just one large-ish field.
+On their website, EasyChair claims reaching [1 million users](http://easychair.org/news_item.cgi?id=20962278) as of 2014-01-06.
+
+After using EasyChair for a conference from beginning to end, for nearly every purpose but submitting a paper, my overall impression is that:
+
+- as a web app, it's one of the worst I've ever (extensively) used.
+- as conference management software, it is, unfortunately, one of the best.
+
+From what I hear, the free version used to have more features, and it's hard to complain much about something that's free.
+But we needed a couple of trivial features that were [not available in the free version](http://easychair.org/licenses.cgi), including:
+
+* Two additional submission fields: a checkbox for "submit for special session" and a checkbox for "submit as poster candidate"
+* Data export functionality. We didn't originally anticipate needing this, but it proved invaluable due to limitations of the EasyChair interface.
+
+So we paid 265 GBP (≈ $409 USD) for the "professional" license. It is capable, but frustrating. Here are some pain points:
+
+* The user interface flouts all sorts of standard practices that good web apps adhere to:
+  - For all but the basic root pages, URLs are not persistent. To share a page on the app with another user, you have to describe how to navigate to that page after logging in. You can't simply send them the URL.
+  - Compounding the URL headache, many of the links in the app have JavaScripted event overrides, so basic navigational tools like command-clicking a link to open a new tab doesn't work.
+  - The web app has a fragmented design, so even if you get comfortable working with the tables on the program committee page, for example, things will be somewhat different on the authors / submissions tables.
+  - What links go where is often a matter of random clicking and memorization. In some places you can click on a submission title, in others, you have to click on the magnifying glass on the submissions row. Inconsistencies like this can be found throughout the app.
+* There's barely any documentation. Some pages have short descriptions, some have mouseover popups to describe certain interface items, but a good portion of the user interface is perplexing, and the only way to figure out what something does is to do it and hope for the best (or hope that you can undo it, if needed). Some of the most useful help pages I found while Googling were from other people who had the same problem and had cobbled together some kind of hack of a solution.
+* I spent something like 10 hours trying to walk a number of reviewers through the process of recovering / differentiating / merging their multiple EasyChair accounts that were associated with different emails. This is possible, and not too tricky once you have a decent grasp of how EasyChair handles user accounts from the admin side (and which email is currently associated which role), but it is extremely user unfriendly and wastes a lot of time.
+* EasyChair tells you when a user (identified by email address) last logged into EasyChair (if at all), regardless of whether or not they agreed to review for you. While this is nice for keeping tabs on whether your reviewers have even looked at their reviews, it strikes me as a privacy leak.
+* The data export is badly organized. The sheets in the Excel export roughly map to SQL tables, but there are, for example, multiple representations of users and user IDs across authors and reviewers, which in our case had quite a bit of overlap. They also represent boolean values, like 'corresponding' on the authors table, as checkmarks. I ended up writing a Node.js package to read Excel files into a PostgreSQL database more or less automatically (mapping sheets to tables), and then some EasyChair-specific SQL views to sanitize/normalize the raw data.
+* The data export omits some of the data available on the EasyChair site, such as the responses from the author-response process. Because there is no mechanism for submitting bug reports, or even a single developer email address / support mailing list, I emailed the billing@easychair.org address requesting this data, to no avail (support@easychair.org simply kicks back a undeliverable error).
+* Technical support only kicks in at the "Executive" license level (525 GBP ≈ $788 USD), which is about twice the price of the "Professional" level (265 GBP ≈ $409 USD). Beyond a few intermittent errors (which typically succeeded after a few retries) and missing data, as described above, I didn't personally encounter any bugs. But the business model put us in a bind — either we accept any shortcomings and inscrutabilities of the product as-is (there were a couple; one of the reviewers emailed that he was unable to log on to EasyChair despite his best efforts to reset his password, clear cookies, etc.), or we pony up the difference to the next license level and hope for the best. We didn't upgrade to the full support level.
+* EasyChair seems to be making a name for itself (a name that doesn't start with "easy"); here's a snippet from one of the reviewers who declined:
+
+  > I hesitated to reply because in principle I would be inclined to do it, but there are technical difficulties with EasyChair. It's a long story, somehow my role as an author and as a reviewer got in conflict, and any attempt to create a new account ends up with the message that I am already registered. In the past, I got the evaluation sheets from the organizers who then uploaded them to EasyChair, but that's perhaps too cumbersome.
+  >
+  > So my decision is unfortunately: no, sorry, I don't want to get into that mess again.
+
+I've heard of other people having much less dismal experiences with EasyChair in the past.
+I'm guessing all the annoyances are easier to stomach if it's free, so it's certainly not as rosy as it might once have been.
+Perhaps the new monetization will bring in funds to improve the product as a whole, but I'm not holding my breath.
+
+
+## Payments
+
 ### Considerations when evaluating payment processors
 
 (Extracted from an email thread from mid-February 2016)
