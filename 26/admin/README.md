@@ -82,7 +82,7 @@ For the special session on presupposition, we offered the following topics in a 
 * Variation between presupposition triggers (e.g. hard vs. soft)
 
 
-### Emails
+## Emails
 
 Templates for the various emails we delivered to authors and reviewers are available in the [email](email/) folder.
 
@@ -208,7 +208,7 @@ Despite EventBrite's exorbitant fees (more than twice those of other processors)
 Finally, my EventBrite fees estimate ended up only $18 off what we actually paid in fees.
 
 
-### Survey
+## Survey
 
 The survey was based on NYU's 2014 survey, and administered via [Qualtrics](https://utexas.qualtrics.com/).
 The exported schema (not data) of the final version, in Qualtrics format, is available at [`survey.qsf`](survey.qsf).
@@ -221,7 +221,7 @@ There are four blocks/pages:
 4. Final page, shown to everyone, asking about the special session
 
 
-### Misc. Comments / Advice
+## Misc. Comments / Advice
 
 * Even if all the relevant information is online, or in an email, people love printouts. Here's some of the stuff we printed and made available at the registration desk:
   - Wi-fi access information
