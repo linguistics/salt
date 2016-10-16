@@ -645,9 +645,13 @@ export const Registration = ({}) =>
 export const Index = ({}) =>
   <div>
     <section>
-      <h2>Proceedings update!</h2>
+      <h2>Proceedings</h2>
 
-      <p>Submitting to the proceedings and have questions? Please read the <a href="proceedings">proceedings</a> page first to see if your question has an answer there.</p>
+      <p>The first batch of the proceedings has been published!<br />
+        <a href="http://journals.linguisticsociety.org/proceedings/index.php/SALT/issue/view/154">
+          <code>journals.linguisticsociety.org/proceedings/index.php/SALT/issue/view/154</code>
+        </a>
+      </p>
 
       <h2>Announcements</h2>
 
@@ -777,14 +781,12 @@ export const Call = ({}) =>
 export const Proceedings = ({}) =>
   <div>
     <section>
-      <h3>Questions about deadlines? Formatting? Indecipherable LaTeX errors?</h3>
-
-      <p>Please email your proceedings-related questions to the team at Cornell (their address is in the instruction packet you received), <em>not</em> to salt26conf@gmail.com.
-      </p>
-
       <h2>Proceedings of SALT 26</h2>
 
-      <p>All papers presented at the main or the special session of the conference will be published in the SALT 26 proceedings. As with preceding years, this volume will be edited by Cornell University and published by the <a href="http://www.linguisticsociety.org/">Linguistic Society of America</a>, and will be available at the <a href="http://journals.linguisticsociety.org/proceedings/index.php/SALT/index">SALT Proceedings webpage</a> once published.
+      <p>The proceedings are available here: <a href="http://journals.linguisticsociety.org/proceedings/index.php/SALT/issue/view/154"><b>Proceedings of SALT 26</b></a>.
+      </p>
+
+      <p>All papers presented at the main or the special session of the conference will be published in the SALT 26 proceedings. As with preceding years, this volume will be edited by Cornell University and published by the <a href="http://www.linguisticsociety.org/">Linguistic Society of America</a>.
       </p>
 
       <div style={{textAlign: 'center'}}>
@@ -826,5 +828,10 @@ export const Proceedings = ({}) =>
     ISSN={2163-5951}`}</pre>
 
       <p>(Thanks to Mary Moroney for these suggestions!)</p>
+
+      <h3>Questions about deadlines? Formatting? Indecipherable LaTeX errors?</h3>
+
+      <p>Please email your proceedings-related questions to the team at Cornell (their address is in the instruction packet you received), <em>not</em> to salt26conf@gmail.com.
+      </p>
     </section>
   </div>;
