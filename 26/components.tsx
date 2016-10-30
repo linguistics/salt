@@ -699,6 +699,17 @@ export const Index = ({}) =>
         </i>
       </p>
     </section>
+
+    <section>
+      <h2>Archive 🔒</h2>
+
+      <p>As of <time dateTime="2016-10-29">2016-10-29</time>, the <a href="http://journals.linguisticsociety.org/proceedings/index.php/SALT/issue/view/154">SALT 26 proceedings</a> have been published and we've linked to the <a href="http://lingsite.org/salt27/">SALT 27 website</a>. We anticipate no further updates, so this website is entering archival mode. If the live site is unavailable, please try the following alternatives:
+        <ul>
+          <li><a href="https://github.com/linguistics/salt"><code>https://github.com/linguistics/salt</code></a></li>
+          <li><a href="https://linguistics.github.io/salt/26/"><code>https://linguistics.github.io/salt/26/</code></a></li>
+        </ul>
+      </p>
+    </section>
   </div>;
 
 export const Call = ({}) =>
