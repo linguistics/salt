@@ -198,7 +198,7 @@ Just as a ballpark estimate, if we charge what Stanford did — $40 / student, $
 
 Under the same ballpark estimate ($6000 of fees across 100 transactions), EventBrite would cost $429. But I don't think we need any of the additional features of EventBrite, like discount codes or availability periods.
 
-**Results and rationale**
+### Results and rationale
 
 Despite EventBrite's exorbitant fees (more than twice those of other processors), we ended up going with them because they have an option to mail you a physical check a week or two after the end of the payment period, which is convenient.
 
@@ -207,6 +207,19 @@ Despite EventBrite's exorbitant fees (more than twice those of other processors)
 * We did process a number of refunds and changed some of the ordering data manually, which was easy, but again, I expect those basic tasks on other platforms are similarly easy.
 
 Finally, my EventBrite fees estimate ended up only $18 off what we actually paid in fees.
+
+### Registration & Fees
+
+Eventbrite's registration form wasn't flexible enough to ask questions like "What days of the conference will you attend?" (checkbox list) and "For local participants: what is your UT Austin affiliation?" (radio buttons), so we had all registrants fill out a short Google form, and all non-local participants use Eventbrite just for payment purposes.
+
+We did not accept cash or check. For the few lingering participants that arrived at the conference without having paid, we just tracked them down and badgered them to pay on Eventbrite then and there.
+
+Registration was free for UT students / faculty / staff. Otherwise, the registration fees (which included the special session on presupposition) were:
+
+* $50 - Student Early Registration
+* $90 - Non-student Early Registration
+* $75 - Student Registration after April 15
+* $125 - Non-student Registration after April 15
 
 
 ## Survey
