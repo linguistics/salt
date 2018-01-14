@@ -1,16 +1,16 @@
 {
   "dependencies": {
-    "autoprefixer": "*",
-    "declarations": "*",
+    "autoprefixer": "6.3.6",
+    "declarations": "0.1.12",
     "js-yaml": "3.5.5",
-    "less": "*",
-    "mime-types": "*",
-    "mz": "*",
+    "less": "2.6.1",
+    "mime-types": "2.1.11",
+    "mz": "2.4.0",
     "optimist": "0.6.1",
-    "postcss": "*",
-    "react": "*",
-    "react-dom": "*",
-    "typescript": "*",
-    "urlio": "*"
+    "postcss": "5.0.21",
+    "react": "5.0.21",
+    "react-dom": "5.0.21",
+    "typescript": "1.8.10",
+    "urlio": "0.4.0"
   }
 }
