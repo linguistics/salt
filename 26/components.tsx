@@ -647,7 +647,7 @@ export const Index = ({}) =>
     <section>
       <h2>SALT 27</h2>
 
-      <p>SALT 27 will be hosted at the <b>University of Maryland</b>, College Park, on <b>May 12–14</b>, 2017!
+      <p>SALT 27 was hosted at the <b>University of Maryland</b>, College Park, on <b>May 12–14</b>, 2017.
         Go to <a href="http://lingsite.org/salt27/"><code>lingsite.org/salt27/</code></a> for all the details.</p>
 
       <h2>Proceedings</h2>
