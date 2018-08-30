@@ -141,7 +141,7 @@ export const About = ({}) =>
         <li><b>Liz Myrick</b></li>
       </ul>
 
-      <p>Our local graduate student "volunteers," for making sure (mostly<sup>‡</sup>) everything ran smoothly:</p>
+      <p>Our local graduate student volunteers, for making sure (mostly<sup>‡</sup>) everything ran smoothly:</p>
 
       <ul>
         <li><b>Christopher Brown</b></li>
