@@ -1,4 +1,4 @@
-import * as React from 'react';
+import * as React from 'react'
 
 export const Layout = ({children, version, current_variable}) =>
   <html>
@@ -67,7 +67,7 @@ export const Layout = ({children, version, current_variable}) =>
         </div>
       </div>
     </body>
-  </html>;
+  </html>
 
 export const About = ({}) =>
   <div>
@@ -215,7 +215,7 @@ export const About = ({}) =>
       </ul>
 
     </section>
-  </div>;
+  </div>
 
 export const Program = ({days, files}) =>
   <div>
@@ -246,10 +246,10 @@ export const Program = ({days, files}) =>
               {chair && <div className="chair">{chair}</div>}
               <ul className="submissions">
                 {submissions.map(({id, author, title, invited, abstract}, j) => {
-                  const abstract_filename = `${abstract || `${id}.pdf`}`;
-                  const abstract_exists = files.abstracts.includes(abstract_filename);
-                  const shared_file_regExp = new RegExp(`^${id}-(\\w+)`);
-                  const shared_files = files.shared.filter(file => shared_file_regExp.test(file));
+                  const abstract_filename = `${abstract || `${id}.pdf`}`
+                  const abstract_exists = files.abstracts.includes(abstract_filename)
+                  const shared_file_regExp = new RegExp(`^${id}-(\\w+)`)
+                  const shared_files = files.shared.filter(file => shared_file_regExp.test(file))
                   return (
                     <li key={j} className={invited ? 'invited' : ''}>
                       <div>
@@ -258,8 +258,8 @@ export const Program = ({days, files}) =>
                           <span>{author}: </span>}
                         {abstract_exists ? <a href={`abstracts/${abstract_filename}`}><i>{title}</i></a> : <i>{title}</i>}
                         {shared_files.map(shared_file => {
-                          const match = shared_file.match(shared_file_regExp);
-                          return <span key={shared_file}> [<a href={`shared/${shared_file}`}>{match[1]}</a>]</span>;
+                          const match = shared_file.match(shared_file_regExp)
+                          return <span key={shared_file}> [<a href={`shared/${shared_file}`}>{match[1]}</a>]</span>
                         })}
                       </div>
                     </li>
@@ -272,7 +272,7 @@ export const Program = ({days, files}) =>
       )}
     </div>
     <script>initializeProgram();</script>
-  </div>;
+  </div>
 
 export const Help = ({}) =>
   <div>
@@ -300,7 +300,7 @@ export const Help = ({}) =>
       horizontal navigation bar. At the bottom of that page there is a
       "Merge accounts" section that will merge the other account into your current account.</p>
     </section>
-  </div>;
+  </div>
 
 export const Instructions = ({}) =>
   <div>
@@ -522,7 +522,7 @@ export const Instructions = ({}) =>
         </li>
       </ul>
     </section>
-  </div>;
+  </div>
 
 
 export const Local = ({}) =>
@@ -597,7 +597,7 @@ export const Local = ({}) =>
         Due to the central location of the UT campus, you will have to venture about a mile out to find free street parking (I'd recommend looking just east of I-35), and then walk or bus over, but I know of some people who do that.
       </p>
     </section>
-  </div>;
+  </div>
 
 export const Registration = ({}) =>
   <div>
@@ -640,7 +640,7 @@ export const Registration = ({}) =>
         recommend registering prior to arriving in Austin.
       </p>
     </section>
-  </div>;
+  </div>
 
 export const Index = ({}) =>
   <div>
@@ -715,7 +715,7 @@ export const Index = ({}) =>
         <li><a href="https://linguistics.github.io/salt/26/"><code>https://linguistics.github.io/salt/26/</code></a></li>
       </ul>
     </section>
-  </div>;
+  </div>
 
 export const Call = ({}) =>
   <div>
@@ -797,7 +797,7 @@ export const Call = ({}) =>
         <b>Submit your abstract here</b>: <a href="https://easychair.org/conferences/?conf=salt26"><code>https://easychair.org/conferences/?conf=salt26</code></a>
       </p>
     </section>
-  </div>;
+  </div>
 
 export const Proceedings = ({}) =>
   <div>
@@ -855,4 +855,4 @@ export const Proceedings = ({}) =>
       <p>Please email your proceedings-related questions to the team at Cornell (their address is in the instruction packet you received), <em>not</em> to salt26conf@gmail.com.
       </p>
     </section>
-  </div>;
+  </div>
