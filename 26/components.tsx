@@ -645,6 +645,12 @@ export const Registration = ({}) =>
 export const Index = ({}) =>
   <div>
     <section>
+      <h2>SALT 29</h2>
+
+      <p>SALT 29 will be hosted at the <b>University of California</b>, Los Angeles, in 2019!
+        Presumably, details will be available at <a href="http://linguistics.ucla.edu/conference/salt29/"><code>linguistics.ucla.edu/conference/salt29/</code></a>.<br />
+        (As of August 2018, there's nothing there, but at least there is a <i>there</i> there!)</p>
+
       <h2>SALT 28</h2>
 
       <p>SALT 28 was hosted at the <b>Massachusetts Institute of Technology</b> on <b>May 18–20</b>, 2018.
