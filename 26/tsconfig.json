@@ -3,15 +3,5 @@
     "jsx": "react",
     "module": "commonjs",
     "target": "ES6"
-  },
-  "files": [
-    "node_modules/declarations/mz/mz.d.ts",
-    "node_modules/declarations/less/less.d.ts",
-    "node_modules/declarations/node/node.d.ts",
-    "node_modules/declarations/react/react-dom.d.ts",
-    "node_modules/declarations/react/react.d.ts",
-    "node_modules/declarations/optimist/optimist.d.ts",
-    "components.tsx",
-    "server.ts"
-  ]
+  }
 }

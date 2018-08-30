@@ -3,8 +3,12 @@
   "license": "UNLICENSED",
   "repository": "github:linguistics/salt",
   "dependencies": {
+    "@types/mz": "0.0.32",
+    "@types/node": "10.9.4",
+    "@types/optimist": "0.0.29",
+    "@types/react": "15.6.19",
+    "@types/react-dom": "15.5.8",
     "autoprefixer": "6.3.6",
-    "declarations": "0.1.12",
     "js-yaml": "3.5.5",
     "less": "2.6.1",
     "mime-types": "2.1.11",
@@ -13,7 +17,7 @@
     "postcss": "5.0.21",
     "react": "15.6.2",
     "react-dom": "15.6.2",
-    "typescript": "1.8.10",
+    "typescript": "2.9.2",
     "urlio": "0.4.0"
   }
 }
