@@ -647,8 +647,8 @@ export const Index = ({}) =>
     <section>
       <h2>SALT 28</h2>
 
-      <p>SALT 28 will be hosted at the <b>Massachusetts Institute of Technology</b> on <b>May 18–20</b>, 2018!
-        Go to <a href="http://web.mit.edu/linguistics/SALT28/"><code>web.mit.edu/linguistics/SALT28/</code></a> for all the details.</p>
+      <p>SALT 28 was hosted at the <b>Massachusetts Institute of Technology</b> on <b>May 18–20</b>, 2018.
+        Go to <a href="https://salt28mit.org/"><code>salt28mit.org</code></a> for all the details.</p>
 
       <h2>SALT 27</h2>
 
