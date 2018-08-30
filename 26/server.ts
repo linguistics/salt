@@ -9,7 +9,7 @@ const autoprefixer = require('autoprefixer')
 const postcss = require('postcss')
 const mime = require('mime-types')
 import * as optimist from 'optimist'
-import * as url from 'url'
+import {parse} from 'url'
 import * as urlio from 'urlio'
 import * as React from 'react'
 import * as ReactServer from 'react-dom/server'
@@ -78,8 +78,8 @@ const routes: Route[] = [
         const element = React.createElement(components.Layout, props,
           React.createElement(Component, props)
         )
-        const html = '<!DOCTYPE html>\n' + ReactServer.renderToStaticMarkup(element)
-        return new Buffer(html, 'utf8')
+        const html = `<!DOCTYPE html>\n${ReactServer.renderToStaticMarkup(element)}`
+        return Buffer.from(html, 'utf8')
       })
     },
   },
@@ -90,7 +90,7 @@ const routes: Route[] = [
       return readFile(site_less_path, {encoding: 'utf8'})
       .then(site_less_string => less.render(site_less_string))
       .then(renderOutput => postcss([autoprefixer]).process(renderOutput.css))
-      .then(result => new Buffer(result.css, 'utf8'))
+      .then(result => Buffer.from(result.css, 'utf8'))
     },
   },
   {
@@ -116,11 +116,11 @@ function formatServerAddress(address: string | AddressInfo): string {
 
 export function start(port: number = 7258, hostname: string = '127.0.0.1') {
   const server = createServer((req, res) => {
-    const {pathname} = url.parse(req.url)
+    const {pathname} = parse(req.url)
     // try {url}, {url + '.html'}, and {url + 'index.html'}
     render(pathname)
-    .catch(() => render(pathname + '.html'))
-    .catch(() => render(pathname + 'index.html'))
+    .catch(() => render(`${pathname}.html`))
+    .catch(() => render(`${pathname}index.html`))
     .then(data => {
       const contentType = mime.contentType(extname(pathname)) || 'text/html'
       res.setHeader('Content-Type', contentType)

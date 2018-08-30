@@ -222,7 +222,7 @@ export const Program = ({days, files}) =>
     <nav className="flex-fill">
       <a href="#">Show all</a>
       {days.map(({name}) =>
-        <a key={name} href={'#' + name.toLowerCase()}>{name}</a>
+        <a key={name} href={`#${name.toLowerCase()}`}>{name}</a>
       )}
     </nav>
     <div id="days">
@@ -548,7 +548,7 @@ export const Local = ({}) =>
         The address is <a href="https://www.google.com/maps/place/DoubleTree+Suites+by+Hilton+Hotel+Austin,+303+W+15th+St,+Austin,+TX+78701">303 W 15th St, Austin, TX 78701</a> (the corner of 15th and Lavaca), which is about half a mile from where most of SALT will take place.
       </p>
 
-      <div style={{opacity: .25}}>
+      <div style={{opacity: 0.25}}>
         <p>
           Please use this personalized reservation page to access our group rates: <a href="http://doubletree.hilton.com/en/dt/groups/personalized/A/AUSFLDT-SLT-20160511/index.jhtml?WT.mc_id=POG"><small><code>http://doubletree.hilton.com/en/dt/groups/personalized/A/AUSFLDT-SLT-20160511/index.jhtml?WT.mc_id=POG</code></small></a>
         </p>
