@@ -176,7 +176,7 @@ function prepareSlidePair(session: Session, submission: Submission): Promise<str
   })
 }
 
-// node_modules/.bin/tsc --watch
+// npx tsc --watch
 function main() {
   const argv = optimist.options({
     out: {

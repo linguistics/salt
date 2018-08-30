@@ -3,14 +3,11 @@ REVISION := $(shell git rev-parse --short HEAD)
 
 all: render
 
-26/node_modules/.bin/tsc:
-	cd 26 && npm install
-
-26/server.js 26/components.js: 26/server.ts 26/components.tsx 26/node_modules/.bin/tsc
-	cd 26 && node_modules/.bin/tsc
+26/server.js 26/components.js: 26/server.ts 26/components.tsx
+	cd 26 && npx tsc
 
 dev:
-	cd 26 && (node_modules/.bin/tsc --watch & node server.js & wait)
+	cd 26 && (npx tsc --watch & node server.js & wait)
 
 render: 26/server.js 26/components.js
 	cp -R 26/abstracts/ ../salt-gh-pages/26/abstracts/
