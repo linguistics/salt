@@ -1,4 +1,5 @@
 import {IncomingMessage, ServerResponse, createServer} from 'http'
+import {AddressInfo} from 'net'
 import {spawn, ChildProcess} from 'child_process'
 import {readFile, writeFile, exists, createReadStream, createWriteStream, readdir} from 'mz/fs'
 import {join, extname} from 'path'
@@ -106,6 +107,13 @@ export function render(url: string): Promise<Buffer> {
   return route.handler({params: route.params})
 }
 
+function formatServerAddress(address: string | AddressInfo): string {
+  if (typeof address == 'string') {
+    return address
+  }
+  return `${address.address}:${address.port}`
+}
+
 export function start(port: number = 7258, hostname: string = '127.0.0.1') {
   const server = createServer((req, res) => {
     const {pathname} = url.parse(req.url)
@@ -126,7 +134,7 @@ export function start(port: number = 7258, hostname: string = '127.0.0.1') {
   })
   server.on('listening', () => {
     const address = server.address()
-    console.log(`server listening on http://${address.address}:${address.port}`)
+    console.log(`server listening on http://${formatServerAddress(server.address())}`)
   })
   server.listen(port, hostname)
 }
