@@ -1,4 +1,7 @@
 {
+  "private": true,
+  "license": "UNLICENSED",
+  "repository": "github:linguistics/salt",
   "dependencies": {
     "autoprefixer": "6.3.6",
     "declarations": "0.1.12",
